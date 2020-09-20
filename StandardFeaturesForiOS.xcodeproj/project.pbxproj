@@ -54,14 +54,38 @@
 		9CB84D3A25177CB500179CFE /* StandardFeaturesForiOS */ = {
 			isa = PBXGroup;
 			children = (
+				9CB84D542517830900179CFE /* View */,
+				9CB84D53251782FD00179CFE /* ViewController */,
+				9CB84D52251782F400179CFE /* Storyboard */,
 				9CB84D3B25177CB500179CFE /* AppDelegate.swift */,
-				9CB84D3F25177CB500179CFE /* MainViewController.swift */,
-				9CB84D4125177CB500179CFE /* MainViewController.storyboard */,
 				9CB84D4425177CB600179CFE /* Assets.xcassets */,
 				9CB84D4625177CB600179CFE /* LaunchScreen.storyboard */,
 				9CB84D4925177CB600179CFE /* Info.plist */,
 			);
 			path = StandardFeaturesForiOS;
+			sourceTree = "<group>";
+		};
+		9CB84D52251782F400179CFE /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				9CB84D4125177CB500179CFE /* MainViewController.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		9CB84D53251782FD00179CFE /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				9CB84D3F25177CB500179CFE /* MainViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		9CB84D542517830900179CFE /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
