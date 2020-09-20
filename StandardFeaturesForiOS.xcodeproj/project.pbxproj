@@ -15,6 +15,8 @@
 		9CB84D582517871F00179CFE /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB84D572517871F00179CFE /* MainViewModel.swift */; };
 		9CB84D5E2517A76F00179CFE /* MainCoreViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB84D5C2517A76F00179CFE /* MainCoreViewCell.swift */; };
 		9CB84D5F2517A76F00179CFE /* MainCoreViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9CB84D5D2517A76F00179CFE /* MainCoreViewCell.xib */; };
+		9CB84D652517AE3500179CFE /* MainModuleViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB84D632517AE3500179CFE /* MainModuleViewCell.swift */; };
+		9CB84D662517AE3500179CFE /* MainModuleViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9CB84D642517AE3500179CFE /* MainModuleViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		9CB84D572517871F00179CFE /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 		9CB84D5C2517A76F00179CFE /* MainCoreViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoreViewCell.swift; sourceTree = "<group>"; };
 		9CB84D5D2517A76F00179CFE /* MainCoreViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainCoreViewCell.xib; sourceTree = "<group>"; };
+		9CB84D632517AE3500179CFE /* MainModuleViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainModuleViewCell.swift; sourceTree = "<group>"; };
+		9CB84D642517AE3500179CFE /* MainModuleViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainModuleViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +113,8 @@
 			children = (
 				9CB84D5C2517A76F00179CFE /* MainCoreViewCell.swift */,
 				9CB84D5D2517A76F00179CFE /* MainCoreViewCell.xib */,
+				9CB84D632517AE3500179CFE /* MainModuleViewCell.swift */,
+				9CB84D642517AE3500179CFE /* MainModuleViewCell.xib */,
 			);
 			path = UITableViewCell;
 			sourceTree = "<group>";
@@ -174,6 +180,7 @@
 				9CB84D5F2517A76F00179CFE /* MainCoreViewCell.xib in Resources */,
 				9CB84D4525177CB600179CFE /* Assets.xcassets in Resources */,
 				9CB84D4325177CB500179CFE /* MainViewController.storyboard in Resources */,
+				9CB84D662517AE3500179CFE /* MainModuleViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -186,6 +193,7 @@
 			files = (
 				9CB84D4025177CB500179CFE /* MainViewController.swift in Sources */,
 				9CB84D5E2517A76F00179CFE /* MainCoreViewCell.swift in Sources */,
+				9CB84D652517AE3500179CFE /* MainModuleViewCell.swift in Sources */,
 				9CB84D3C25177CB500179CFE /* AppDelegate.swift in Sources */,
 				9CB84D582517871F00179CFE /* MainViewModel.swift in Sources */,
 			);
