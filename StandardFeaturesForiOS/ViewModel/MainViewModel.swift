@@ -45,6 +45,21 @@ enum MainRowType: String {
 class MainViewModel: NSObject {
     // tableViewのセクション
     var sections: [MainSectionType] = []
+    // セクションセット
+    override init() {
+        super.init()
+        self.setSections()
+    }
+}
+
+extension MainViewModel {
+    private func setSections() {
+        // このメソッド内でセクションの設定を行う（ex. ログインしているときは〇〇）
+        self.sections = [
+            .core,
+            .module
+        ]
+    }
 }
 
 extension MainViewModel: UITableViewDataSource {
@@ -58,7 +73,7 @@ extension MainViewModel: UITableViewDataSource {
         let sectionType: MainSectionType = self.sections[indexPath.section]
         switch sectionType {
         case .core:
-            let cell: MainCoreViewCell = tableView.dequeueReusableCell(withIdentifier: "MainViewCoreCell", for: indexPath) as! MainCoreViewCell
+            let cell: MainCoreViewCell = tableView.dequeueReusableCell(withIdentifier: "MainCoreViewCell", for: indexPath) as! MainCoreViewCell
             return cell
         case .module:
             let cell: MainModuleViewCell = tableView.dequeueReusableCell(withIdentifier: "MainModuleViewCell", for: indexPath) as! MainModuleViewCell
