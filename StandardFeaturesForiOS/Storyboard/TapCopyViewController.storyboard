@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="7Sh-7L-mdP">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="qez-VJ-NTB">
+            <objects>
+                <viewController id="7Sh-7L-mdP" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="WKz-CO-3ok">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ec0-qc-hrm">
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <items>
+                                    <navigationItem title="長押しコピー" id="ePh-Dr-cRF"/>
+                                </items>
+                            </navigationBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UILabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aeh-IC-ade">
+                                <rect key="frame" x="20" y="108" width="374" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="長押しタップでテキストをコピーできる実装です。長押しタップでテキストをコピーできる実装です。長押しタップでテキストをコピーできる実装です。長押しタップでテキストをコピーできる実装です。" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V2B-SS-Ogo">
+                                <rect key="frame" x="20" y="149" width="374" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="gM1-oB-Kns"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UITextView" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a1j-6V-vRT">
+                                <rect key="frame" x="20" y="279" width="85" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="lny-DY-IlJ">
+                                <rect key="frame" x="20" y="320" width="374" height="150"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="sdC-MX-eKy"/>
+                                </constraints>
+                                <string key="text">タップしたテキストをココに貼り付けてください。タップしたテキストをココに貼り付けてください。タップしたテキストをココに貼り付けてください。タップしたテキストをココに貼り付けてください。タップしたテキストをココに貼り付けてください。タップしたテキストをココに貼り付けてください。タップしたテキストをココに貼り付けてください。タップしたテキストをココに貼り付けてください。タップしたテキストをココに貼り付けてください。</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="zU0-6e-AvK"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="V2B-SS-Ogo" firstAttribute="leading" secondItem="zU0-6e-AvK" secondAttribute="leading" constant="20" id="2oJ-MC-zs3"/>
+                            <constraint firstItem="V2B-SS-Ogo" firstAttribute="top" secondItem="aeh-IC-ade" secondAttribute="bottom" constant="20" id="AXL-je-fs2"/>
+                            <constraint firstItem="aeh-IC-ade" firstAttribute="leading" secondItem="zU0-6e-AvK" secondAttribute="leading" constant="20" id="JP0-3Q-L9b"/>
+                            <constraint firstItem="zU0-6e-AvK" firstAttribute="trailing" secondItem="lny-DY-IlJ" secondAttribute="trailing" constant="20" id="MxT-oy-ufZ"/>
+                            <constraint firstItem="lny-DY-IlJ" firstAttribute="leading" secondItem="zU0-6e-AvK" secondAttribute="leading" constant="20" id="PSL-jw-yQc"/>
+                            <constraint firstItem="a1j-6V-vRT" firstAttribute="leading" secondItem="zU0-6e-AvK" secondAttribute="leading" constant="20" id="YPT-tA-B7y"/>
+                            <constraint firstItem="ec0-qc-hrm" firstAttribute="trailing" secondItem="zU0-6e-AvK" secondAttribute="trailing" id="cc7-yz-vfj"/>
+                            <constraint firstItem="zU0-6e-AvK" firstAttribute="trailing" secondItem="V2B-SS-Ogo" secondAttribute="trailing" constant="20" id="eoq-hh-HcF"/>
+                            <constraint firstItem="ec0-qc-hrm" firstAttribute="leading" secondItem="zU0-6e-AvK" secondAttribute="leading" id="pJD-Eg-yxx"/>
+                            <constraint firstItem="ec0-qc-hrm" firstAttribute="top" secondItem="zU0-6e-AvK" secondAttribute="top" id="txY-fi-AbM"/>
+                            <constraint firstItem="a1j-6V-vRT" firstAttribute="top" secondItem="V2B-SS-Ogo" secondAttribute="bottom" constant="30" id="wGL-xK-G7Q"/>
+                            <constraint firstItem="lny-DY-IlJ" firstAttribute="top" secondItem="a1j-6V-vRT" secondAttribute="bottom" constant="20" id="wqv-s7-7zY"/>
+                            <constraint firstItem="zU0-6e-AvK" firstAttribute="trailing" secondItem="aeh-IC-ade" secondAttribute="trailing" constant="20" id="xjC-F5-f8d"/>
+                            <constraint firstItem="aeh-IC-ade" firstAttribute="top" secondItem="ec0-qc-hrm" secondAttribute="bottom" constant="20" id="zZh-Wn-Qus"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3BT-4G-aYI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="228" y="118"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
