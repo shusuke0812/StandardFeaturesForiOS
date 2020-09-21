@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9C8DB13C25184AED00A97CC0 /* MainBaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C8DB13B25184AEC00A97CC0 /* MainBaseView.swift */; };
 		9CB84D3C25177CB500179CFE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB84D3B25177CB500179CFE /* AppDelegate.swift */; };
 		9CB84D4025177CB500179CFE /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB84D3F25177CB500179CFE /* MainViewController.swift */; };
 		9CB84D4325177CB500179CFE /* MainViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CB84D4125177CB500179CFE /* MainViewController.storyboard */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9C8DB13B25184AEC00A97CC0 /* MainBaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainBaseView.swift; sourceTree = "<group>"; };
 		9CB84D3825177CB500179CFE /* StandardFeaturesForiOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StandardFeaturesForiOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CB84D3B25177CB500179CFE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9CB84D3F25177CB500179CFE /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -45,6 +47,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9C8DB13A25184AD000A97CC0 /* BaseView */ = {
+			isa = PBXGroup;
+			children = (
+				9C8DB13B25184AEC00A97CC0 /* MainBaseView.swift */,
+			);
+			path = BaseView;
+			sourceTree = "<group>";
+		};
 		9CB84D2F25177CB500179CFE = {
 			isa = PBXGroup;
 			children = (
@@ -95,6 +105,7 @@
 		9CB84D542517830900179CFE /* View */ = {
 			isa = PBXGroup;
 			children = (
+				9C8DB13A25184AD000A97CC0 /* BaseView */,
 				9CB84D5B2517A71E00179CFE /* UITableViewCell */,
 			);
 			path = View;
@@ -193,6 +204,7 @@
 			files = (
 				9CB84D4025177CB500179CFE /* MainViewController.swift in Sources */,
 				9CB84D5E2517A76F00179CFE /* MainCoreViewCell.swift in Sources */,
+				9C8DB13C25184AED00A97CC0 /* MainBaseView.swift in Sources */,
 				9CB84D652517AE3500179CFE /* MainModuleViewCell.swift in Sources */,
 				9CB84D3C25177CB500179CFE /* AppDelegate.swift in Sources */,
 				9CB84D582517871F00179CFE /* MainViewModel.swift in Sources */,
