@@ -74,9 +74,13 @@ extension MainViewModel: UITableViewDataSource {
         switch sectionType {
         case .core:
             let cell: MainCoreViewCell = tableView.dequeueReusableCell(withIdentifier: "MainCoreViewCell", for: indexPath) as! MainCoreViewCell
+            let rowType: MainRowType = sectionType.rows[indexPath.row]
+            cell.titleLabel.text = rowType.rawValue
             return cell
         case .module:
             let cell: MainModuleViewCell = tableView.dequeueReusableCell(withIdentifier: "MainModuleViewCell", for: indexPath) as! MainModuleViewCell
+            let rowType: MainRowType = sectionType.rows[indexPath.row]
+            cell.titleLabel.text = rowType.rawValue
             return cell
         }
     }
