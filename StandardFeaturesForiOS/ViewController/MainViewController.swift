@@ -57,6 +57,16 @@ extension MainViewController: UITableViewDelegate {
             print("DEBUG： カルーセルセルがタップされた")
         case .tapCopy:
             print("DEBUG： 長押しコピーセルがタップされた")
+            self.transitionTapCopyPage()
         }
+    }
+}
+
+extension MainViewController {
+    /// 長押しコピー
+    private func transitionTapCopyPage() {
+        let s: UIStoryboard = UIStoryboard(name: "TapCopyViewController", bundle: nil)
+        let vc: TapCopyViewController = s.instantiateInitialViewController() as! TapCopyViewController
+        self.present(vc, animated: true, completion: nil)
     }
 }
