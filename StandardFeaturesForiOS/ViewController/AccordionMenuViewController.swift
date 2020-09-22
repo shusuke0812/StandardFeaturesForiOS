@@ -5,25 +5,30 @@
 //  Created by Shusuke Ota on 2020/9/22.
 //
 
+/*
+ * このクラスで実装されている主な機能
+ *   - ボタンを押すと隠れているテキストが表示される機能
+ */
+
 import UIKit
 
 class AccordionMenuViewController: UIViewController {
 
+    @IBOutlet weak var saleTimeDetailLabel: UILabel!
+    private var showSaleTimeDetail: Bool = true
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    // MARK: - Action Method
+    @IBAction func showSaleTimeDetailButton(_ sender: Any) {
+        self.showSaleTimeDetail = !showSaleTimeDetail
+        UIView.animate(withDuration: 0.3) {
+            self.saleTimeDetailLabel.isHidden = !self.showSaleTimeDetail
+        }
     }
-    */
-
+    @IBAction func moreReadButton(_ sender: Any) {
+    }
+    
 }
