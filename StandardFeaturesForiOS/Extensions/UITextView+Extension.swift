@@ -26,4 +26,18 @@ extension UITextView {
     @objc private func tapDoneButton(sender: UIButton) {
         self.endEditing(true)
     }
+    
+    /// 行数を取得する
+    internal func getNumberOfLines() -> Int {
+        let numberOfGlyphs: Int = self.layoutManager.numberOfGlyphs
+        var index: Int = 0
+        var numberOfLines: Int = 1
+        var lineRange = NSRange(location: NSNotFound, length: 0)
+        while index < numberOfGlyphs {
+            self.layoutManager.lineFragmentRect(forGlyphAt: index, effectiveRange: &lineRange)
+            index = NSMaxRange(lineRange)
+            numberOfLines += 1
+        }
+        return numberOfLines
+    }
 }

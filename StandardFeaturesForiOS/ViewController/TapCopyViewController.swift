@@ -36,7 +36,8 @@ extension TapCopyViewController {
         // テキスト表示用のtextCopyViewのタップ処理
         self.textCopyView.isEditable = false
         self.textCopyView.isScrollEnabled = false
-        
+        self.textCopyView.textContainer.maximumNumberOfLines = self.textCopyView.getNumberOfLines()
+        self.textCopyView.textContainer.lineBreakMode = .byTruncatingTail
         
     }
 }

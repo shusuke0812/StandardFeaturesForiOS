@@ -37,7 +37,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="lny-DY-IlJ">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="lny-DY-IlJ">
                                 <rect key="frame" x="20" y="405" width="374" height="150"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
@@ -48,8 +48,8 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UITextView（入力用）" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a1j-6V-vRT">
-                                <rect key="frame" x="20" y="364" width="171.5" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="UITextView（入力用）" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a1j-6V-vRT">
+                                <rect key="frame" x="20" y="364" width="374" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -61,7 +61,7 @@
                                     <constraint firstAttribute="height" constant="1" id="1R0-dU-7fS"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Re2-kd-S44">
+                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Re2-kd-S44">
                                 <rect key="frame" x="20" y="388" width="374" height="1"/>
                                 <color key="backgroundColor" systemColor="systemGray4Color"/>
                                 <constraints>
@@ -81,12 +81,9 @@
                                     <constraint firstAttribute="height" constant="1" id="UIp-vS-8S0"/>
                                 </constraints>
                             </view>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="長押しタップでテキストをコピーできる実装です。長押しタップでテキストをコピーできる実装です。" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="a2c-1V-hlh">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" text="長押しタップでテキストをコピーできる実装です。長押しタップでテキストをコピーできる実装です。" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="a2c-1V-hlh">
                                 <rect key="frame" x="20" y="279" width="374" height="50"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="6jn-yV-4VX"/>
-                                </constraints>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -95,6 +92,7 @@
                         <viewLayoutGuide key="safeArea" id="zU0-6e-AvK"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="zU0-6e-AvK" firstAttribute="trailing" secondItem="a1j-6V-vRT" secondAttribute="trailing" constant="20" id="2S9-eG-Pwf"/>
                             <constraint firstItem="V2B-SS-Ogo" firstAttribute="leading" secondItem="zU0-6e-AvK" secondAttribute="leading" constant="20" id="2oJ-MC-zs3"/>
                             <constraint firstItem="Re2-kd-S44" firstAttribute="leading" secondItem="WKz-CO-3ok" secondAttribute="leadingMargin" id="578-zl-QZC"/>
                             <constraint firstItem="V2B-SS-Ogo" firstAttribute="top" secondItem="aeh-IC-ade" secondAttribute="bottom" constant="20" id="AXL-je-fs2"/>
