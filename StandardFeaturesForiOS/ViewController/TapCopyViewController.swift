@@ -9,7 +9,10 @@ import UIKit
 
 class TapCopyViewController: UIViewController {
 
+    @IBOutlet weak var textView: UITextView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        textView.setDoneButton()
     }
 }

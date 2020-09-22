@@ -94,6 +94,9 @@
                             <constraint firstItem="aeh-IC-ade" firstAttribute="top" secondItem="ec0-qc-hrm" secondAttribute="bottom" constant="20" id="zZh-Wn-Qus"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="textView" destination="lny-DY-IlJ" id="V9M-sx-G0f"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3BT-4G-aYI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
