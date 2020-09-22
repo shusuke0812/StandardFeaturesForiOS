@@ -10,7 +10,7 @@ import UIKit
 class MainBaseView: UIView {
     @IBOutlet weak var tableView: UITableView!
     override func awakeFromNib() {
-        super .awakeFromNib()
+        super.awakeFromNib()
         self.registerTableViewCell()
     }
 }
