@@ -7,24 +7,35 @@
 
 import UIKit
 
-extension UILabel {
+class TapCopyUILabel: UILabel {
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        self.setTapCopy()
+    }
+    required init?(coder: NSCoder) {
+        super.init(coder: coder)
+        self.setTapCopy()
+    }
+}
+
+extension TapCopyUILabel {
+    override var canBecomeFirstResponder: Bool { return true }
     /// 長押しタップでテキストをコピー
-    internal func tapCopy() {
+    func setTapCopy() {
         self.isUserInteractionEnabled = true
-        addGestureRecognizer(UILongPressGestureRecognizer(target: self, action: #selector(handleLongPressGesture)))
+        addGestureRecognizer(UILongPressGestureRecognizer(target: self, action: #selector(handleLongPressGesture(_:))))
     }
     /// 長押しした時の処理
-    @objc private func handleLongPressGesture(recognizer: UIGestureRecognizer) {
-        self.becomeFirstResponder()
-        let contextMenu = UIMenuController.shared
-        if contextMenu.isMenuVisible {
-            contextMenu.showMenu(from: recognizer.view?.superview, rect: recognizer.view?.frame)
+    @objc func handleLongPressGesture(_ recognizer: UIGestureRecognizer) {
+        if let recognizerView: UIView = recognizer.view, let recognizerSuperView: UIView = recognizerView.superview, recognizerView.becomeFirstResponder() {
+            let menuController: UIMenuController = UIMenuController.shared
+            menuController.showMenu(from: recognizerSuperView, rect: recognizerView.frame)
         }
     }
-    open override func canPerformAction(_ action: Selector, withSender sender: Any?) -> Bool {
+    override func canPerformAction(_ action: Selector, withSender sender: Any?) -> Bool {
         return action == #selector(UIResponderStandardEditActions.copy)
     }
-    open override func copy(_ sender: Any?) {
+    override func copy(_ sender: Any?) {
         UIPasteboard.general.string = text
     }
 }
