@@ -13,11 +13,19 @@ class TapCopyViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // キーボードに完了ボタンを設定
-        self.textView.setDoneButton()
+        self.setUI()
     }
     // キーボード外をタップした時の閉じる処理
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.textView.endEditing(true)
+    }
+}
+
+extension TapCopyViewController {
+    private func setUI() {
+        // キーボードに完了ボタンを設定
+        self.textView.setDoneButton()
+        // キーボードタイプをdefaultの日本語-ローマ字に設定
+        self.textView.keyboardType = .default
     }
 }
