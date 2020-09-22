@@ -38,5 +38,4 @@ class AccordionMenuViewController: UIViewController {
             self.textView.isHidden.toggle()
         }
     }
-    
 }

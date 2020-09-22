@@ -24,9 +24,10 @@ Swiftを使ったiOSアプリ開発に良く使う機能一覧
 - 利用規約、プライバシーポリシー
 - カルーセル表示 
 - ラベル長押しコピー[済]
+- アコーディオンメニュー[済]
 
 ## 参考文献
--  
+- [アコーディオンメニュー](https://github.com/nRewik/UIStackViewEasyAnimation)
 
 
 
