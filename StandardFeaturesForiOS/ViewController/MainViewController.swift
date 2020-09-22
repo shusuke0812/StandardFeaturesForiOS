@@ -63,16 +63,25 @@ extension MainViewController: UITableViewDelegate {
         case .tapCopy:
             print("DEBUG： 長押しコピーセルがタップされた")
             self.transitionTapCopyPage()
+        case .accordion:
+            print("DEBUG： アコーディオンセルがタップされた")
+            self.transitionAccordionMenuPage()
         }
     }
 }
 
 extension MainViewController {
     // TODO：各セル毎に同じような画面遷移の処理を書く必要があるので、一つにまとめられないか検討する
-    /// 長押しコピー
+    /// 長押しコピー画面へ遷移
     private func transitionTapCopyPage() {
         let s: UIStoryboard = UIStoryboard(name: "TapCopyViewController", bundle: nil)
         let vc: TapCopyViewController = s.instantiateInitialViewController() as! TapCopyViewController
+        self.present(vc, animated: true, completion: nil)
+    }
+    /// アコーディオン画面へ遷移
+    private func transitionAccordionMenuPage() {
+        let s: UIStoryboard = UIStoryboard(name: "AccordionMenuViewController", bundle: nil)
+        let vc: AccordionMenuViewController = s.instantiateInitialViewController() as! AccordionMenuViewController
         self.present(vc, animated: true, completion: nil)
     }
 }
