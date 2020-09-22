@@ -5,6 +5,10 @@
 //  Created by Shusuke Ota on 2020/9/20.
 //
 
+/*
+ * このclassはtableViewに書く機能をセクション表示させ、各セルをタップして画面遷移させる役割
+ */
+
 import UIKit
 
 class MainViewController: UIViewController {

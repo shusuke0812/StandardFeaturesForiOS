@@ -5,6 +5,14 @@
 //  Created by Shusuke Ota on 2020/9/22.
 //
 
+/*
+ * このクラスで実装されている主な機能
+ *   - Labelのテキストを長押ししてコピーできる機能...UILabelのカスタムclassで実装
+ *   - キーボードに閉じるボタン（name="完了"）を追加する処理...UITextViewのextensionで実装
+ *   - キーボード外をタップして閉じる処理
+ *   - TextViewをテキスト表示のみにする処理...UITextViewのextensionで実装
+ */
+
 import UIKit
 
 class TapCopyViewController: UIViewController {
