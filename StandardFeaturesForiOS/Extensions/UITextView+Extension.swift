@@ -22,7 +22,7 @@ extension UITextView {
         toolBar.items = [spacer, doneButton]
         self.inputAccessoryView = toolBar
     }
-    /// キーボードの完了ボタンを押した時の閉じる処理
+    /// キーボードの完了ボタンをタップ時の閉じる処理
     @objc private func tapDoneButton(sender: UIButton) {
         self.endEditing(true)
     }

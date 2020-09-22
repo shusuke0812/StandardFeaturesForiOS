@@ -13,6 +13,11 @@ class TapCopyViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        textView.setDoneButton()
+        // キーボードに完了ボタンを設定
+        self.textView.setDoneButton()
+    }
+    // キーボード外をタップした時の閉じる処理
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.textView.endEditing(true)
     }
 }
