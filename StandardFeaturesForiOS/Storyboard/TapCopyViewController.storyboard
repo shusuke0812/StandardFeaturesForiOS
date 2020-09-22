@@ -22,34 +22,34 @@
                                     <navigationItem title="長押しコピー" id="ePh-Dr-cRF"/>
                                 </items>
                             </navigationBar>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UILabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aeh-IC-ade">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UILabel（テキスト全コピー）" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aeh-IC-ade">
                                 <rect key="frame" x="20" y="108" width="374" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="長押しタップでテキストをコピーできる実装です。長押しタップでテキストをコピーできる実装です。長押しタップでテキストをコピーできる実装です。長押しタップでテキストをコピーできる実装です。" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V2B-SS-Ogo">
-                                <rect key="frame" x="20" y="149" width="374" height="100"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="長押しタップでテキストをコピーできる実装です。長押しタップでテキストをコピーできる実装です。" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V2B-SS-Ogo" customClass="TapCopyUILabel" customModule="StandardFeaturesForiOS" customModuleProvider="target">
+                                <rect key="frame" x="20" y="149" width="374" height="50"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="gM1-oB-Kns"/>
+                                    <constraint firstAttribute="height" constant="50" id="gM1-oB-Kns"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="lny-DY-IlJ">
-                                <rect key="frame" x="20" y="320" width="374" height="150"/>
+                                <rect key="frame" x="20" y="405" width="374" height="150"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="150" id="sdC-MX-eKy"/>
                                 </constraints>
-                                <string key="text">タップしたテキストをココに貼り付けてください。タップしたテキストをココに貼り付けてください。タップしたテキストをココに貼り付けてください。タップしたテキストをココに貼り付けてください。タップしたテキストをココに貼り付けてください。タップしたテキストをココに貼り付けてください。タップしたテキストをココに貼り付けてください。タップしたテキストをココに貼り付けてください。タップしたテキストをココに貼り付けてください。</string>
+                                <string key="text">タップしたテキストをココに貼り付けてください。タップしたテキストをココに貼り付けてください。タップしたテキストをココに貼り付けてください。タップしたテキストをココに貼り付けてください。タップしたテキストをココに貼り付けてください。タップしたテキストをココに貼り付けてください。</string>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UITextView" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a1j-6V-vRT">
-                                <rect key="frame" x="20" y="279" width="85" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UITextView（入力用）" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a1j-6V-vRT">
+                                <rect key="frame" x="20" y="364" width="171.5" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -62,12 +62,35 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Re2-kd-S44">
-                                <rect key="frame" x="20" y="303" width="374" height="1"/>
+                                <rect key="frame" x="20" y="388" width="374" height="1"/>
                                 <color key="backgroundColor" systemColor="systemGray4Color"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="1" id="DYc-h3-fyh"/>
                                 </constraints>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UITextView（テキスト部分コピー）" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bPV-10-IIP">
+                                <rect key="frame" x="20" y="234" width="374" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cri-Sh-kVC">
+                                <rect key="frame" x="20" y="258" width="374" height="1"/>
+                                <color key="backgroundColor" systemColor="systemGray4Color"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="UIp-vS-8S0"/>
+                                </constraints>
+                            </view>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="長押しタップでテキストをコピーできる実装です。長押しタップでテキストをコピーできる実装です。" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="a2c-1V-hlh">
+                                <rect key="frame" x="20" y="279" width="374" height="50"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="6jn-yV-4VX"/>
+                                </constraints>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="zU0-6e-AvK"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -79,22 +102,33 @@
                             <constraint firstItem="aeh-IC-ade" firstAttribute="leading" secondItem="zU0-6e-AvK" secondAttribute="leading" constant="20" id="JP0-3Q-L9b"/>
                             <constraint firstItem="zU0-6e-AvK" firstAttribute="trailing" secondItem="lny-DY-IlJ" secondAttribute="trailing" constant="20" id="MxT-oy-ufZ"/>
                             <constraint firstItem="lny-DY-IlJ" firstAttribute="leading" secondItem="zU0-6e-AvK" secondAttribute="leading" constant="20" id="PSL-jw-yQc"/>
+                            <constraint firstItem="cri-Sh-kVC" firstAttribute="top" secondItem="bPV-10-IIP" secondAttribute="bottom" constant="3" id="Rvo-fI-mSh"/>
+                            <constraint firstItem="a2c-1V-hlh" firstAttribute="leading" secondItem="zU0-6e-AvK" secondAttribute="leading" constant="20" id="T2U-mT-OdD"/>
+                            <constraint firstItem="cri-Sh-kVC" firstAttribute="leading" secondItem="WKz-CO-3ok" secondAttribute="leadingMargin" id="VmW-FC-6yf"/>
                             <constraint firstItem="rve-Tv-rUc" firstAttribute="top" secondItem="aeh-IC-ade" secondAttribute="bottom" constant="3" id="VuB-jF-T56"/>
+                            <constraint firstItem="cri-Sh-kVC" firstAttribute="trailing" secondItem="WKz-CO-3ok" secondAttribute="trailingMargin" id="Xf2-2w-k7F"/>
                             <constraint firstItem="a1j-6V-vRT" firstAttribute="leading" secondItem="zU0-6e-AvK" secondAttribute="leading" constant="20" id="YPT-tA-B7y"/>
+                            <constraint firstItem="zU0-6e-AvK" firstAttribute="trailing" secondItem="bPV-10-IIP" secondAttribute="trailing" constant="20" id="ZE6-Xm-cur"/>
+                            <constraint firstItem="bPV-10-IIP" firstAttribute="leading" secondItem="zU0-6e-AvK" secondAttribute="leading" constant="20" id="ahj-Uf-eZ9"/>
                             <constraint firstItem="ec0-qc-hrm" firstAttribute="trailing" secondItem="zU0-6e-AvK" secondAttribute="trailing" id="cc7-yz-vfj"/>
                             <constraint firstItem="zU0-6e-AvK" firstAttribute="trailing" secondItem="V2B-SS-Ogo" secondAttribute="trailing" constant="20" id="eoq-hh-HcF"/>
                             <constraint firstItem="rve-Tv-rUc" firstAttribute="leading" secondItem="zU0-6e-AvK" secondAttribute="leading" constant="20" id="fP9-7l-32y"/>
+                            <constraint firstItem="a1j-6V-vRT" firstAttribute="top" secondItem="a2c-1V-hlh" secondAttribute="bottom" constant="35" id="hv1-cf-6sP"/>
                             <constraint firstItem="zU0-6e-AvK" firstAttribute="trailing" secondItem="rve-Tv-rUc" secondAttribute="trailing" constant="20" id="mbE-Sn-hNR"/>
+                            <constraint firstItem="bPV-10-IIP" firstAttribute="top" secondItem="V2B-SS-Ogo" secondAttribute="bottom" constant="35" id="o5L-d0-uOQ"/>
                             <constraint firstItem="ec0-qc-hrm" firstAttribute="leading" secondItem="zU0-6e-AvK" secondAttribute="leading" id="pJD-Eg-yxx"/>
+                            <constraint firstItem="zU0-6e-AvK" firstAttribute="trailing" secondItem="a2c-1V-hlh" secondAttribute="trailing" constant="20" id="rYD-0v-iG1"/>
                             <constraint firstItem="ec0-qc-hrm" firstAttribute="top" secondItem="zU0-6e-AvK" secondAttribute="top" id="txY-fi-AbM"/>
                             <constraint firstItem="Re2-kd-S44" firstAttribute="top" secondItem="a1j-6V-vRT" secondAttribute="bottom" constant="3" id="v0L-JL-4dJ"/>
-                            <constraint firstItem="a1j-6V-vRT" firstAttribute="top" secondItem="V2B-SS-Ogo" secondAttribute="bottom" constant="30" id="wGL-xK-G7Q"/>
                             <constraint firstItem="lny-DY-IlJ" firstAttribute="top" secondItem="a1j-6V-vRT" secondAttribute="bottom" constant="20" id="wqv-s7-7zY"/>
+                            <constraint firstItem="a2c-1V-hlh" firstAttribute="top" secondItem="cri-Sh-kVC" secondAttribute="bottom" constant="20" id="xCR-A9-lTV"/>
                             <constraint firstItem="zU0-6e-AvK" firstAttribute="trailing" secondItem="aeh-IC-ade" secondAttribute="trailing" constant="20" id="xjC-F5-f8d"/>
                             <constraint firstItem="aeh-IC-ade" firstAttribute="top" secondItem="ec0-qc-hrm" secondAttribute="bottom" constant="20" id="zZh-Wn-Qus"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="textCopyView" destination="a2c-1V-hlh" id="9DO-Kj-aI9"/>
+                        <outlet property="textLabel" destination="V2B-SS-Ogo" id="meN-NB-L2n"/>
                         <outlet property="textView" destination="lny-DY-IlJ" id="V9M-sx-G0f"/>
                     </connections>
                 </viewController>
