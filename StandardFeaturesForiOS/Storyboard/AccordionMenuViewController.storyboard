@@ -150,6 +150,7 @@
                     </view>
                     <connections>
                         <outlet property="saleTimeDetailLabel" destination="1pT-Sh-bkV" id="NuW-Pl-Vvx"/>
+                        <outlet property="textView" destination="eJe-oG-1J2" id="MAU-8C-e1n"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ihz-gZ-dMd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

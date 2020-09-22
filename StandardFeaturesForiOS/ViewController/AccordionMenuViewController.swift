@@ -14,8 +14,12 @@ import UIKit
 
 class AccordionMenuViewController: UIViewController {
 
+    // アコーディオンメニュー
     @IBOutlet weak var saleTimeDetailLabel: UILabel!
     private var showSaleTimeDetail: Bool = true
+    
+    // もっと見る
+    @IBOutlet weak var textView: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,6 +33,10 @@ class AccordionMenuViewController: UIViewController {
         }
     }
     @IBAction func moreReadButton(_ sender: Any) {
+        UIView.animate(withDuration: 0.3) { [weak self] in
+            guard let self = self else { return }
+            self.textView.isHidden.toggle()
+        }
     }
     
 }
