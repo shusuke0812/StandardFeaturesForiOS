@@ -63,6 +63,7 @@ extension MainViewController: UITableViewDelegate {
 }
 
 extension MainViewController {
+    // TODO：各セル毎に同じような画面遷移の処理を書く必要があるので、一つにまとめられないか検討する
     /// 長押しコピー
     private func transitionTapCopyPage() {
         let s: UIStoryboard = UIStoryboard(name: "TapCopyViewController", bundle: nil)
