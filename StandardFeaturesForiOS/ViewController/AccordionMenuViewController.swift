@@ -21,6 +21,7 @@ class AccordionMenuViewController: UIViewController {
     // もっと見る
     @IBOutlet weak var onTextView: UIView!
     @IBOutlet weak var onTextViewForUITextView: UIView!
+    @IBOutlet weak var onTextStackViewForUITextView: UIStackView!
     @IBOutlet weak var textView: UITextView!
     
     override func viewDidLoad() {
@@ -45,6 +46,8 @@ class AccordionMenuViewController: UIViewController {
         UIView.animate(withDuration: 0.3) { [weak self] in
             guard let self = self else { return }
             self.onTextViewForUITextView.isHidden.toggle()
+            // もっと見るボタン押下後に長押ししてテキスト・選択できるようにする
+            self.onTextStackViewForUITextView.isHidden.toggle()
         }
     }
 }
