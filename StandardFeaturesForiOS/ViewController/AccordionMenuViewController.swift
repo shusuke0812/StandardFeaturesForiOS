@@ -19,8 +19,8 @@ class AccordionMenuViewController: UIViewController {
     private var showSaleTimeDetail: Bool = true
     
     // もっと見る
-    @IBOutlet weak var textView: UIView!
-    @IBOutlet weak var textViewForUITextView: UIView!
+    @IBOutlet weak var onTextView: UIView!
+    @IBOutlet weak var onTextViewForUITextView: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,13 +36,13 @@ class AccordionMenuViewController: UIViewController {
     @IBAction func moreReadButton(_ sender: Any) {
         UIView.animate(withDuration: 0.3) { [weak self] in
             guard let self = self else { return }
-            self.textView.isHidden.toggle()
+            self.onTextView.isHidden.toggle()
         }
     }
     @IBAction func moreReadButtonForUItextView(_ sender: Any) {
         UIView.animate(withDuration: 0.3) { [weak self] in
             guard let self = self else { return }
-            self.textViewForUITextView.isHidden.toggle()
+            self.onTextViewForUITextView.isHidden.toggle()
         }
     }
 }

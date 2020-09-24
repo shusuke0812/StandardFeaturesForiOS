@@ -213,9 +213,9 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="onTextView" destination="eJe-oG-1J2" id="Z8i-km-0nX"/>
+                        <outlet property="onTextViewForUITextView" destination="07G-C1-YPQ" id="Hh9-S8-7rq"/>
                         <outlet property="saleTimeDetailLabel" destination="1pT-Sh-bkV" id="NuW-Pl-Vvx"/>
-                        <outlet property="textView" destination="eJe-oG-1J2" id="MAU-8C-e1n"/>
-                        <outlet property="textViewForUITextView" destination="07G-C1-YPQ" id="O9u-EL-fcz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ihz-gZ-dMd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
