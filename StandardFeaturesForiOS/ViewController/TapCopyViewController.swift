@@ -37,7 +37,7 @@ extension TapCopyViewController {
         self.textView.setDoneButton()
         // キーボードタイプをdefaultの日本語-ローマ字に設定
         self.textView.keyboardType = .default
-        // textViewのフォントを設定
+        // textViewのフォントスタイルを設定
         //（storyboardだけの設定だとfont styleがtimes new romanになるバグがあるため）
         self.textView.font = UIFont.systemFont(ofSize: 17.0)
         self.textCopyView.font = UIFont.systemFont(ofSize: 17.0)
