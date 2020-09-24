@@ -20,6 +20,7 @@ class AccordionMenuViewController: UIViewController {
     
     // もっと見る
     @IBOutlet weak var textView: UIView!
+    @IBOutlet weak var textViewForUITextView: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,6 +37,12 @@ class AccordionMenuViewController: UIViewController {
         UIView.animate(withDuration: 0.3) { [weak self] in
             guard let self = self else { return }
             self.textView.isHidden.toggle()
+        }
+    }
+    @IBAction func moreReadButtonForUItextView(_ sender: Any) {
+        UIView.animate(withDuration: 0.3) { [weak self] in
+            guard let self = self else { return }
+            self.textViewForUITextView.isHidden.toggle()
         }
     }
 }
