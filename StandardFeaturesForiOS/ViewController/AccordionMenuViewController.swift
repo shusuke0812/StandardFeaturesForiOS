@@ -21,9 +21,11 @@ class AccordionMenuViewController: UIViewController {
     // もっと見る
     @IBOutlet weak var onTextView: UIView!
     @IBOutlet weak var onTextViewForUITextView: UIView!
+    @IBOutlet weak var textView: UITextView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.setUI()
     }
     
     // MARK: - Action Method
@@ -44,5 +46,13 @@ class AccordionMenuViewController: UIViewController {
             guard let self = self else { return }
             self.onTextViewForUITextView.isHidden.toggle()
         }
+    }
+}
+
+extension AccordionMenuViewController {
+    private func setUI() {
+        // textViewのフォントスタイルを設定
+        //（storyboardだけの設定だとfont styleがtimes new romanになるバグがあるため）
+        self.textView.font = UIFont.systemFont(ofSize: 14.0)
     }
 }
