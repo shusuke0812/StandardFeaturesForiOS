@@ -26,6 +26,9 @@
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="アラート表示"/>
+                                <connections>
+                                    <action selector="showAlertButton:" destination="wx2-5Z-cDb" eventType="touchUpInside" id="9bS-7d-ePM"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="OHw-n3-Qsc"/>
