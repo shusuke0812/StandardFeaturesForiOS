@@ -25,9 +25,23 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="アラート表示"/>
+                                <state key="normal" title="デフォルトアラート表示"/>
                                 <connections>
                                     <action selector="showAlertButton:" destination="wx2-5Z-cDb" eventType="touchUpInside" id="9bS-7d-ePM"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Si9-a6-nkN">
+                                <rect key="frame" x="16" y="505" width="382" height="50"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Igs-Fg-lzH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="アクションシート表示"/>
+                                <connections>
+                                    <action selector="showActionSheetButton:" destination="wx2-5Z-cDb" eventType="touchUpInside" id="vYQ-gr-CoE"/>
+                                    <action selector="showAlertButton:" destination="wx2-5Z-cDb" eventType="touchUpInside" id="T8u-Fn-72s"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -35,9 +49,12 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="zGD-Es-twl" firstAttribute="centerY" secondItem="Xp7-OO-Oga" secondAttribute="centerY" id="m5u-ic-GDh"/>
+                            <constraint firstItem="Si9-a6-nkN" firstAttribute="top" secondItem="zGD-Es-twl" secondAttribute="bottom" constant="32" id="mVo-Hg-pk0"/>
                             <constraint firstItem="zGD-Es-twl" firstAttribute="centerX" secondItem="Xp7-OO-Oga" secondAttribute="centerX" id="qd9-e1-HLr"/>
                             <constraint firstItem="OHw-n3-Qsc" firstAttribute="trailing" secondItem="zGD-Es-twl" secondAttribute="trailing" constant="16" id="tNV-Ev-vXX"/>
+                            <constraint firstItem="Si9-a6-nkN" firstAttribute="leading" secondItem="OHw-n3-Qsc" secondAttribute="leading" constant="16" id="uwK-jm-yPy"/>
                             <constraint firstItem="zGD-Es-twl" firstAttribute="leading" secondItem="OHw-n3-Qsc" secondAttribute="leading" constant="16" id="yla-Ns-Z06"/>
+                            <constraint firstItem="OHw-n3-Qsc" firstAttribute="trailing" secondItem="Si9-a6-nkN" secondAttribute="trailing" constant="16" id="zxK-YP-AAq"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -52,6 +69,9 @@
         </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
