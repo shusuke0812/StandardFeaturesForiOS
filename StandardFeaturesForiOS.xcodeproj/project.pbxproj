@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		913C3D78A0BAE40BB2461E2B /* Pods_StandardFeaturesForiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C56AED5FD90E2A79225BD698 /* Pods_StandardFeaturesForiOS.framework */; };
+		9C848941251D6BF200192082 /* AlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C848940251D6BF200192082 /* AlertViewController.swift */; };
+		9C848944251D6BFF00192082 /* AlertViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C848943251D6BFF00192082 /* AlertViewController.storyboard */; };
 		9C8DB13C25184AED00A97CC0 /* MainBaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C8DB13B25184AEC00A97CC0 /* MainBaseView.swift */; };
 		9C8DB1412518F7DC00A97CC0 /* TapCopyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C8DB1402518F7DC00A97CC0 /* TapCopyViewController.swift */; };
 		9C8DB1442518F94100A97CC0 /* TapCopyViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C8DB1432518F94100A97CC0 /* TapCopyViewController.storyboard */; };
@@ -29,6 +31,8 @@
 
 /* Begin PBXFileReference section */
 		9091E87551C09F7151328948 /* Pods-StandardFeaturesForiOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StandardFeaturesForiOS.debug.xcconfig"; path = "Target Support Files/Pods-StandardFeaturesForiOS/Pods-StandardFeaturesForiOS.debug.xcconfig"; sourceTree = "<group>"; };
+		9C848940251D6BF200192082 /* AlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertViewController.swift; sourceTree = "<group>"; };
+		9C848943251D6BFF00192082 /* AlertViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AlertViewController.storyboard; sourceTree = "<group>"; };
 		9C8DB13B25184AEC00A97CC0 /* MainBaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainBaseView.swift; sourceTree = "<group>"; };
 		9C8DB1402518F7DC00A97CC0 /* TapCopyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapCopyViewController.swift; sourceTree = "<group>"; };
 		9C8DB1432518F94100A97CC0 /* TapCopyViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TapCopyViewController.storyboard; sourceTree = "<group>"; };
@@ -138,6 +142,7 @@
 				9CB84D4125177CB500179CFE /* MainViewController.storyboard */,
 				9C8DB1432518F94100A97CC0 /* TapCopyViewController.storyboard */,
 				9CAD64A1251A296A000B0A33 /* AccordionMenuViewController.storyboard */,
+				9C848943251D6BFF00192082 /* AlertViewController.storyboard */,
 			);
 			path = Storyboard;
 			sourceTree = "<group>";
@@ -148,6 +153,7 @@
 				9CB84D3F25177CB500179CFE /* MainViewController.swift */,
 				9C8DB1402518F7DC00A97CC0 /* TapCopyViewController.swift */,
 				9CAD649E251A2956000B0A33 /* AccordionMenuViewController.swift */,
+				9C848940251D6BF200192082 /* AlertViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -251,6 +257,7 @@
 				9CB84D4825177CB600179CFE /* LaunchScreen.storyboard in Resources */,
 				9CB84D5F2517A76F00179CFE /* MainCoreViewCell.xib in Resources */,
 				9CB84D4525177CB600179CFE /* Assets.xcassets in Resources */,
+				9C848944251D6BFF00192082 /* AlertViewController.storyboard in Resources */,
 				9CB84D4325177CB500179CFE /* MainViewController.storyboard in Resources */,
 				9C8DB1442518F94100A97CC0 /* TapCopyViewController.storyboard in Resources */,
 				9CB84D662517AE3500179CFE /* MainModuleViewCell.xib in Resources */,
@@ -313,6 +320,7 @@
 				9CAD649F251A2956000B0A33 /* AccordionMenuViewController.swift in Sources */,
 				9CB84D652517AE3500179CFE /* MainModuleViewCell.swift in Sources */,
 				9CB84D3C25177CB500179CFE /* AppDelegate.swift in Sources */,
+				9C848941251D6BF200192082 /* AlertViewController.swift in Sources */,
 				9CB84D582517871F00179CFE /* MainViewModel.swift in Sources */,
 				9C8DB1412518F7DC00A97CC0 /* TapCopyViewController.swift in Sources */,
 				9CAD648C2519BBB9000B0A33 /* TapCopyUILabel.swift in Sources */,

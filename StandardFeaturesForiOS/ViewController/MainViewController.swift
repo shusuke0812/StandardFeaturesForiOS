@@ -66,6 +66,9 @@ extension MainViewController: UITableViewDelegate {
         case .accordion:
             print("DEBUG： アコーディオンセルがタップされた")
             self.transitionAccordionMenuPage()
+        case .alert:
+            print("DEBUG： アコーディオンセルがタップされた")
+            self.transitionAlertPage()
         }
     }
 }
@@ -82,6 +85,12 @@ extension MainViewController {
     private func transitionAccordionMenuPage() {
         let s: UIStoryboard = UIStoryboard(name: "AccordionMenuViewController", bundle: nil)
         let vc: AccordionMenuViewController = s.instantiateInitialViewController() as! AccordionMenuViewController
+        self.present(vc, animated: true, completion: nil)
+    }
+    /// アラート表示画面へ遷移
+    private func transitionAlertPage() {
+        let s: UIStoryboard = UIStoryboard(name: "AlertViewController", bundle: nil)
+        let vc: AlertViewController = s.instantiateInitialViewController() as! AlertViewController
         self.present(vc, animated: true, completion: nil)
     }
 }

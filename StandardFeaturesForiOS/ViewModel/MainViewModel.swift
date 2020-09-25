@@ -25,7 +25,7 @@ enum MainSectionType {
         case .core:
             return [.login, .advertising, .contact, .terms]
         case .module:
-            return [.onBording, .push, .carousel, .tapCopy, .accordion]
+            return [.onBording, .push, .carousel, .tapCopy, .accordion, .alert]
         }
     }
 }
@@ -41,6 +41,7 @@ enum MainRowType: String {
     case carousel       = "カルーセル表示"
     case tapCopy        = "テキスト長押しコピー"
     case accordion      = "アコーディオンメニュー"
+    case alert          = "アラート"
 }
 
 class MainViewModel: NSObject {
