@@ -11,19 +11,16 @@ class PerformanceMeasuringViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
-    
+}
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+extension PerformanceMeasuringViewController {
+    /// メソッドの処理時間を計測する（単一スレッドの場合のみ有効？）
+    internal func performanceMeasuring() {
+        let beginDate = Date()
+        // 計測したいメソッドを書く
+        let endDate = Date()
+        let time = endDate.timeIntervalSince(beginDate)
+        print("DEBUG： \(time)")
     }
-    */
-
 }
