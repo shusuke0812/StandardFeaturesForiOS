@@ -3,6 +3,7 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -22,13 +23,37 @@
                                     <navigationItem title="パフォーマンス計測" id="rXB-8Z-Fr2"/>
                                 </items>
                             </navigationBar>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p2y-Oe-WTF">
+                                <rect key="frame" x="132" y="420.5" width="150" height="55"/>
+                                <color key="backgroundColor" name="AccentColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="6if-Iu-9sI"/>
+                                    <constraint firstAttribute="width" constant="150" id="uhB-0j-E7o"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="tapStartPerformanceMesuringButton:" destination="A8V-zu-qD4" eventType="touchUpInside" id="GK5-3t-YTZ"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Xcode Instruments Time Profileで確認！" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KZv-8i-jp3">
+                                <rect key="frame" x="53" y="510.5" width="308" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="0kw-lY-4vu"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="p2y-Oe-WTF" firstAttribute="centerX" secondItem="fTn-De-Drr" secondAttribute="centerX" id="Dvz-aA-NuV"/>
+                            <constraint firstItem="KZv-8i-jp3" firstAttribute="top" secondItem="p2y-Oe-WTF" secondAttribute="bottom" constant="35" id="JyF-tG-b6V"/>
                             <constraint firstItem="W0g-gZ-ukv" firstAttribute="top" secondItem="0kw-lY-4vu" secondAttribute="top" id="LUG-3l-2Q8"/>
+                            <constraint firstItem="p2y-Oe-WTF" firstAttribute="centerY" secondItem="fTn-De-Drr" secondAttribute="centerY" id="d4W-sW-5Kr"/>
                             <constraint firstItem="W0g-gZ-ukv" firstAttribute="trailing" secondItem="0kw-lY-4vu" secondAttribute="trailing" id="kAm-eg-JL5"/>
                             <constraint firstItem="W0g-gZ-ukv" firstAttribute="leading" secondItem="0kw-lY-4vu" secondAttribute="leading" id="lL8-dm-GYQ"/>
+                            <constraint firstItem="KZv-8i-jp3" firstAttribute="centerX" secondItem="fTn-De-Drr" secondAttribute="centerX" id="nZx-dI-6ZY"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -38,6 +63,9 @@
         </scene>
     </scenes>
     <resources>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
