@@ -60,6 +60,7 @@ extension MainViewController: UITableViewDelegate {
             print("DEBUG： 規約セルがタップされた")
         case .carousel:
             print("DEBUG： カルーセルセルがタップされた")
+            self.transitionCarouselPage()
         case .tapCopy:
             print("DEBUG： 長押しコピーセルがタップされた")
             self.transitionTapCopyPage()
@@ -67,7 +68,7 @@ extension MainViewController: UITableViewDelegate {
             print("DEBUG： アコーディオンセルがタップされた")
             self.transitionAccordionMenuPage()
         case .alert:
-            print("DEBUG： アコーディオンセルがタップされた")
+            print("DEBUG： アラートセルがタップされた")
             self.transitionAlertPage()
         }
     }
@@ -75,6 +76,12 @@ extension MainViewController: UITableViewDelegate {
 
 extension MainViewController {
     // TODO：各セル毎に同じような画面遷移の処理を書く必要があるので、一つにまとめられないか検討する
+    /// カルーセル表示画面へ遷移
+    private func transitionCarouselPage() {
+        let s: UIStoryboard = UIStoryboard(name: "CarouselViewController", bundle: nil)
+        let vc: CarouselViewController = s.instantiateInitialViewController() as! CarouselViewController
+        self.present(vc, animated: true, completion: nil)
+    }
     /// 長押しコピー画面へ遷移
     private func transitionTapCopyPage() {
         let s: UIStoryboard = UIStoryboard(name: "TapCopyViewController", bundle: nil)
