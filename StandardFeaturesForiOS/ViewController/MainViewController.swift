@@ -76,6 +76,7 @@ extension MainViewController: UITableViewDelegate {
             self.transitionAlertPage()
         case .measuring:
             print("DEBUG： パフォーマンス計測がタップされた")
+            self.transitionPerformanceMeasuringPage()
         }
     }
 }
@@ -104,6 +105,12 @@ extension MainViewController {
     private func transitionAlertPage() {
         let s: UIStoryboard = UIStoryboard(name: "AlertViewController", bundle: nil)
         let vc: AlertViewController = s.instantiateInitialViewController() as! AlertViewController
+        self.present(vc, animated: true, completion: nil)
+    }
+    /// パフォーマンス計測画面へ遷移
+    private func transitionPerformanceMeasuringPage() {
+        let s: UIStoryboard = UIStoryboard(name: "PerformanceMeasuringViewController", bundle: nil)
+        let vc: PerformanceMeasuringViewController = s.instantiateInitialViewController() as! PerformanceMeasuringViewController
         self.present(vc, animated: true, completion: nil)
     }
 }
