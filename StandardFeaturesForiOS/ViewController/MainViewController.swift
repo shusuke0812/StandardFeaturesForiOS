@@ -41,6 +41,10 @@ extension MainViewController: UITableViewDelegate {
             return 50
         case .module:
             return 50
+        case .test:
+            return 50
+        case .performance:
+            return 50
         }
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
@@ -70,6 +74,8 @@ extension MainViewController: UITableViewDelegate {
         case .alert:
             print("DEBUG： アラートセルがタップされた")
             self.transitionAlertPage()
+        case .measuring:
+            print("DEBUG： パフォーマンス計測がタップされた")
         }
     }
 }

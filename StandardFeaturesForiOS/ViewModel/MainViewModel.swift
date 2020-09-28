@@ -19,6 +19,10 @@ enum MainSectionType {
     case core
     /// 周辺機能
     case module
+    /// テスト
+    case test
+    /// パフォーマンス計測
+    case performance
     
     internal var rows: [MainRowType] {
         switch self {
@@ -26,6 +30,10 @@ enum MainSectionType {
             return [.login, .advertising, .contact, .terms]
         case .module:
             return [.onBording, .push, .carousel, .tapCopy, .accordion, .alert]
+        case .test:
+            return []
+        case .performance:
+            return [.measuring]
         }
     }
 }
@@ -42,6 +50,7 @@ enum MainRowType: String {
     case tapCopy        = "テキスト長押しコピー"
     case accordion      = "アコーディオンメニュー"
     case alert          = "アラート"
+    case measuring      = "パフォーマンス計測"
 }
 
 class MainViewModel: NSObject {
@@ -59,7 +68,9 @@ extension MainViewModel {
         // このメソッド内でセクションの設定を行う（ex. ログインしているときは〇〇）
         self.sections = [
             .core,
-            .module
+            .module,
+            .test,
+            .performance
         ]
     }
 }
@@ -80,10 +91,21 @@ extension MainViewModel: UITableViewDataSource {
             cell.titleLabel.text = rowType.rawValue
             return cell
         case .module:
-            let cell: MainModuleViewCell = tableView.dequeueReusableCell(withIdentifier: "MainModuleViewCell", for: indexPath) as! MainModuleViewCell
-            let rowType: MainRowType = sectionType.rows[indexPath.row]
-            cell.titleLabel.text = rowType.rawValue
-            return cell
+            return self.makeMainModuleViewCell(tableView: tableView, sectionType: sectionType, indexPath: indexPath)
+        case .test:
+            return self.makeMainModuleViewCell(tableView: tableView, sectionType: sectionType, indexPath: indexPath)
+        case .performance:
+            return self.makeMainModuleViewCell(tableView: tableView, sectionType: sectionType, indexPath: indexPath)
         }
+    }
+}
+
+extension MainViewModel {
+    /// cell生成メソッド
+    func makeMainModuleViewCell(tableView: UITableView, sectionType: MainSectionType, indexPath: IndexPath) -> MainModuleViewCell {
+        let cell: MainModuleViewCell = tableView.dequeueReusableCell(withIdentifier: "MainModuleViewCell", for: indexPath) as! MainModuleViewCell
+        let rowType: MainRowType = sectionType.rows[indexPath.row]
+        cell.titleLabel.text = rowType.rawValue
+        return cell
     }
 }
