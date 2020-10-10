@@ -14,6 +14,8 @@
 		9C8968962521661000AC4315 /* CarouselViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C8968952521661000AC4315 /* CarouselViewController.storyboard */; };
 		9C89689B252166AB00AC4315 /* CarouselCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C896899252166AB00AC4315 /* CarouselCollectionViewCell.swift */; };
 		9C89689C252166AB00AC4315 /* CarouselCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C89689A252166AB00AC4315 /* CarouselCollectionViewCell.xib */; };
+		9C8BB8A125319231008B9DE1 /* HalfModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C8BB8A025319231008B9DE1 /* HalfModalViewController.swift */; };
+		9C8BB8A42531924B008B9DE1 /* HalfModalViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C8BB8A32531924B008B9DE1 /* HalfModalViewController.storyboard */; };
 		9C8DB13C25184AED00A97CC0 /* MainBaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C8DB13B25184AEC00A97CC0 /* MainBaseView.swift */; };
 		9C8DB1412518F7DC00A97CC0 /* TapCopyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C8DB1402518F7DC00A97CC0 /* TapCopyViewController.swift */; };
 		9C8DB1442518F94100A97CC0 /* TapCopyViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C8DB1432518F94100A97CC0 /* TapCopyViewController.storyboard */; };
@@ -43,6 +45,8 @@
 		9C8968952521661000AC4315 /* CarouselViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CarouselViewController.storyboard; sourceTree = "<group>"; };
 		9C896899252166AB00AC4315 /* CarouselCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselCollectionViewCell.swift; sourceTree = "<group>"; };
 		9C89689A252166AB00AC4315 /* CarouselCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CarouselCollectionViewCell.xib; sourceTree = "<group>"; };
+		9C8BB8A025319231008B9DE1 /* HalfModalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HalfModalViewController.swift; sourceTree = "<group>"; };
+		9C8BB8A32531924B008B9DE1 /* HalfModalViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HalfModalViewController.storyboard; sourceTree = "<group>"; };
 		9C8DB13B25184AEC00A97CC0 /* MainBaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainBaseView.swift; sourceTree = "<group>"; };
 		9C8DB1402518F7DC00A97CC0 /* TapCopyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapCopyViewController.swift; sourceTree = "<group>"; };
 		9C8DB1432518F94100A97CC0 /* TapCopyViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TapCopyViewController.storyboard; sourceTree = "<group>"; };
@@ -166,6 +170,7 @@
 				9C848943251D6BFF00192082 /* AlertViewController.storyboard */,
 				9C8968952521661000AC4315 /* CarouselViewController.storyboard */,
 				9C90941125221C890014C951 /* PerformanceMeasuringViewController.storyboard */,
+				9C8BB8A32531924B008B9DE1 /* HalfModalViewController.storyboard */,
 			);
 			path = Storyboard;
 			sourceTree = "<group>";
@@ -179,6 +184,7 @@
 				9C848940251D6BF200192082 /* AlertViewController.swift */,
 				9C8968922521660500AC4315 /* CarouselViewController.swift */,
 				9C90940E25221C770014C951 /* PerformanceMeasuringViewController.swift */,
+				9C8BB8A025319231008B9DE1 /* HalfModalViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -284,6 +290,7 @@
 				9C89689C252166AB00AC4315 /* CarouselCollectionViewCell.xib in Resources */,
 				9CB84D4825177CB600179CFE /* LaunchScreen.storyboard in Resources */,
 				9CB84D5F2517A76F00179CFE /* MainCoreViewCell.xib in Resources */,
+				9C8BB8A42531924B008B9DE1 /* HalfModalViewController.storyboard in Resources */,
 				9CB84D4525177CB600179CFE /* Assets.xcassets in Resources */,
 				9C848944251D6BFF00192082 /* AlertViewController.storyboard in Resources */,
 				9CB84D4325177CB500179CFE /* MainViewController.storyboard in Resources */,
@@ -343,6 +350,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9CB84D4025177CB500179CFE /* MainViewController.swift in Sources */,
+				9C8BB8A125319231008B9DE1 /* HalfModalViewController.swift in Sources */,
 				9CB84D5E2517A76F00179CFE /* MainCoreViewCell.swift in Sources */,
 				9C8DB13C25184AED00A97CC0 /* MainBaseView.swift in Sources */,
 				9CAD648725199186000B0A33 /* UITextView+Extension.swift in Sources */,
