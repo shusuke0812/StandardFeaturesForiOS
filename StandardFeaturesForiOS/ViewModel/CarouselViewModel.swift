@@ -9,7 +9,11 @@ import UIKit
 
 class CarouselViewModel: NSObject {
     /// カルーセル表示画像
-    var carouselImages: [UIImage] = []
+    var carouselImages: [UIImage] = [UIImage(named: "sample01")!,
+                                     UIImage(named: "sample02")!,
+                                     UIImage(named: "sample03")!,
+                                     UIImage(named: "sample04")!,
+                                     UIImage(named: "sample05")!]
 }
 // MARK: - UICollectionView Delegate Method
 extension CarouselViewModel: UICollectionViewDataSource {
