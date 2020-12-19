@@ -40,6 +40,9 @@
                 <constraint firstAttribute="bottom" secondItem="Nm3-Xl-Lke" secondAttribute="bottom" id="mLU-dC-KPn"/>
             </constraints>
             <size key="customSize" width="307" height="160"/>
+            <connections>
+                <outlet property="imageView" destination="wFr-sK-HMf" id="BNn-Ks-wDd"/>
+            </connections>
             <point key="canvasLocation" x="323.91304347826087" y="153.34821428571428"/>
         </collectionViewCell>
     </objects>
