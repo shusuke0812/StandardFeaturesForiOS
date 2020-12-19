@@ -21,4 +21,7 @@ extension CarouselCollectionViewCell {
     private func initUI() {
         self.imageView.backgroundColor = .lightGray
     }
+    func setUI(image: UIImage)  {
+        self.imageView.image = image
+    }
 }
