@@ -78,6 +78,8 @@ extension MainViewController: UITableViewDelegate {
             print("DEBUG： パフォーマンス計測がタップされた")
             self.transitionPerformanceMeasuringPage()
         }
+        // セルの選択状態を解除
+        self.baseView.tableView.deselectRow(at: indexPath, animated: true)
     }
 }
 
