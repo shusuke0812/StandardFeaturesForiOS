@@ -5,7 +5,6 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
-        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -13,7 +12,7 @@
         <scene sceneID="s7j-Sd-oYu">
             <objects>
                 <viewController id="VQh-8B-1pj" customClass="CarouselViewController" customModule="StandardFeaturesForiOS" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="jbz-LO-98k">
+                    <view key="view" contentMode="scaleToFill" id="jbz-LO-98k" customClass="CarouselBaseView" customModule="StandardFeaturesForiOS" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -35,16 +34,7 @@
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
-                                <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="uLf-TU-Se6" customClass="CarouselCollectionViewCell" customModule="StandardFeaturesForiOS" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="HHY-Q3-6Yk">
-                                            <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </collectionViewCellContentView>
-                                    </collectionViewCell>
-                                </cells>
+                                <cells/>
                             </collectionView>
                             <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="6s7-td-gcp">
                                 <rect key="frame" x="0.0" y="328" width="414" height="35"/>
@@ -66,6 +56,10 @@
                             <constraint firstItem="k4v-dG-bdo" firstAttribute="trailing" secondItem="ZEw-UY-f9D" secondAttribute="trailing" id="aoe-qN-gp9"/>
                             <constraint firstItem="ZEw-UY-f9D" firstAttribute="leading" secondItem="k4v-dG-bdo" secondAttribute="leading" id="mUh-SM-DiU"/>
                         </constraints>
+                        <connections>
+                            <outlet property="collectionView" destination="ZEw-UY-f9D" id="poB-Fq-DL0"/>
+                            <outlet property="flowLayout" destination="cE8-qw-P42" id="ahI-Ur-Iba"/>
+                        </connections>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Yha-P6-OpR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
