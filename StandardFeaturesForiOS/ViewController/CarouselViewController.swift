@@ -37,7 +37,7 @@ extension CarouselViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let horizontalSpace: CGFloat = 0.0
         let cellWidth: CGFloat = self.baseView.bounds.width - horizontalSpace
-        let cellHeight: CGFloat = cellWidth / 2
+        let cellHeight: CGFloat = self.baseView.collectionView.bounds.height
         return CGSize(width: cellWidth, height: cellHeight)
     }
 }
