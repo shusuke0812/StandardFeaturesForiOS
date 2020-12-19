@@ -20,6 +20,7 @@ class CarouselBaseView: UIView {
 // MARK: - Initialized Method
 extension CarouselBaseView {
     private func initUI() {
+        self.flowLayout.estimatedItemSize = .zero
         self.collectionView.register(UINib(nibName: "CarouselCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "CarouselCollectionViewCell")
     }
 }
