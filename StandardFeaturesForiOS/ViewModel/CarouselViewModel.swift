@@ -24,7 +24,7 @@ extension CarouselViewModel: UICollectionViewDataSource {
         return self.carouselImages.count
     }
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CultivationCollectionViewCell", for: indexPath) as! CarouselCollectionViewCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CarouselCollectionViewCell", for: indexPath) as! CarouselCollectionViewCell
         return cell
     }
 }
