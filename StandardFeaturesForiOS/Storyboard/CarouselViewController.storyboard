@@ -28,7 +28,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="240" id="urj-bS-QQA"/>
                                 </constraints>
-                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="1" minimumInteritemSpacing="0.0" id="cE8-qw-P42">
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="cE8-qw-P42" customClass="CarouselCollectionFlowLayout" customModule="StandardFeaturesForiOS" customModuleProvider="target">
                                     <size key="itemSize" width="128" height="128"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
@@ -58,7 +58,7 @@
                         </constraints>
                         <connections>
                             <outlet property="collectionView" destination="ZEw-UY-f9D" id="poB-Fq-DL0"/>
-                            <outlet property="flowLayout" destination="cE8-qw-P42" id="ahI-Ur-Iba"/>
+                            <outlet property="flowLayout" destination="cE8-qw-P42" id="Bji-Tp-aJA"/>
                         </connections>
                     </view>
                 </viewController>
