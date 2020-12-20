@@ -10,7 +10,6 @@ import UIKit
 class CarouselBaseView: UIView {
     
     @IBOutlet weak var collectionView: UICollectionView!
-    //@IBOutlet weak var flowLayout: UICollectionViewFlowLayout!
     @IBOutlet weak var flowLayout: CarouselCollectionFlowLayout!
     
     override func awakeFromNib() {
