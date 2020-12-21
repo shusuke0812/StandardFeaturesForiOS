@@ -44,10 +44,19 @@
                                     <action selector="showAlertButton:" destination="wx2-5Z-cDb" eventType="touchUpInside" id="T8u-Fn-72s"/>
                                 </connections>
                             </button>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lGA-za-r0w">
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <items>
+                                    <navigationItem title="アラート" id="faW-mW-Jj6"/>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="OHw-n3-Qsc"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="lGA-za-r0w" firstAttribute="top" secondItem="OHw-n3-Qsc" secondAttribute="top" id="AZH-My-djW"/>
+                            <constraint firstItem="lGA-za-r0w" firstAttribute="leading" secondItem="OHw-n3-Qsc" secondAttribute="leading" id="YGA-Sx-BiR"/>
+                            <constraint firstItem="lGA-za-r0w" firstAttribute="trailing" secondItem="OHw-n3-Qsc" secondAttribute="trailing" id="l5Z-sh-hUe"/>
                             <constraint firstItem="zGD-Es-twl" firstAttribute="centerY" secondItem="Xp7-OO-Oga" secondAttribute="centerY" id="m5u-ic-GDh"/>
                             <constraint firstItem="Si9-a6-nkN" firstAttribute="top" secondItem="zGD-Es-twl" secondAttribute="bottom" constant="32" id="mVo-Hg-pk0"/>
                             <constraint firstItem="zGD-Es-twl" firstAttribute="centerX" secondItem="Xp7-OO-Oga" secondAttribute="centerX" id="qd9-e1-HLr"/>
