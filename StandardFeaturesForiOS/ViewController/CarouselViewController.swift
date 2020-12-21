@@ -23,6 +23,7 @@ class CarouselViewController: UIViewController {
         super.viewDidLoad()
         self.viewModel = CarouselViewModel()
         self.setDelegateDataSource()
+        self.setPageControl()
     }
 }
 // MARK: - Private Method
@@ -30,6 +31,9 @@ extension CarouselViewController {
     private func setDelegateDataSource() {
         self.baseView.collectionView.delegate = self
         self.baseView.collectionView.dataSource = self.viewModel
+    }
+    private func setPageControl() {
+        self.baseView.setPageControl(currentPageNumber: 0, numberOfPages: self.viewModel.carouselImages.count)
     }
 }
 // MARK: - UICollectionView Delegate FlowLayout Method

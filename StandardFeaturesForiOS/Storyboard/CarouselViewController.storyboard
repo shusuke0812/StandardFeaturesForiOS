@@ -36,7 +36,7 @@
                                 </collectionViewFlowLayout>
                                 <cells/>
                             </collectionView>
-                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="6s7-td-gcp">
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="6s7-td-gcp">
                                 <rect key="frame" x="0.0" y="328" width="414" height="35"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="gZw-8v-s2g"/>
@@ -59,6 +59,7 @@
                         <connections>
                             <outlet property="collectionView" destination="ZEw-UY-f9D" id="poB-Fq-DL0"/>
                             <outlet property="flowLayout" destination="cE8-qw-P42" id="Bji-Tp-aJA"/>
+                            <outlet property="pageControl" destination="6s7-td-gcp" id="cUW-HZ-V7f"/>
                         </connections>
                     </view>
                 </viewController>
