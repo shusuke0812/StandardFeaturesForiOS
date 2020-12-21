@@ -24,6 +24,7 @@ class CarouselViewController: UIViewController {
         self.viewModel = CarouselViewModel()
         self.setDelegateDataSource()
         self.setPageControl(currentPageNumber: 0)
+        self.baseView.pageControl.addTarget(self, action: #selector(self.onTouchedPageControl(_:)), for: .valueChanged)
     }
 }
 // MARK: - Private Method
@@ -34,6 +35,10 @@ extension CarouselViewController {
     }
     private func setPageControl(currentPageNumber: Int) {
         self.baseView.setPageControl(currentPageNumber: currentPageNumber, numberOfPages: self.viewModel.carouselImages.count)
+    }
+    @objc private func onTouchedPageControl(_ sender: UIPageControl) {
+        let indexPath = IndexPath(item: sender.currentPage, section: 0)
+        self.baseView.collectionView.scrollToItem(at: indexPath, at: .left, animated: true)
     }
 }
 // MARK: - UICollectionView Delegate FlowLayout Method
