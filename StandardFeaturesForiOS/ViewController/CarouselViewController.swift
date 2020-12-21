@@ -23,7 +23,7 @@ class CarouselViewController: UIViewController {
         super.viewDidLoad()
         self.viewModel = CarouselViewModel()
         self.setDelegateDataSource()
-        self.setPageControl()
+        self.setPageControl(currentPageNumber: 0)
     }
 }
 // MARK: - Private Method
@@ -32,8 +32,8 @@ extension CarouselViewController {
         self.baseView.collectionView.delegate = self
         self.baseView.collectionView.dataSource = self.viewModel
     }
-    private func setPageControl() {
-        self.baseView.setPageControl(currentPageNumber: 0, numberOfPages: self.viewModel.carouselImages.count)
+    private func setPageControl(currentPageNumber: Int) {
+        self.baseView.setPageControl(currentPageNumber: currentPageNumber, numberOfPages: self.viewModel.carouselImages.count)
     }
 }
 // MARK: - UICollectionView Delegate FlowLayout Method
@@ -43,5 +43,14 @@ extension CarouselViewController: UICollectionViewDelegateFlowLayout {
         let cellWidth: CGFloat = self.baseView.bounds.width - horizontalSpace
         let cellHeight: CGFloat = self.baseView.collectionView.bounds.height
         return CGSize(width: cellWidth, height: cellHeight)
+    }
+}
+// MARK: - UICollectionView Delegate Method
+extension CarouselViewController: UICollectionViewDelegate {
+    func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
+        let contentOffsetX = scrollView.contentOffset.x
+        let pageWidth = scrollView.bounds.size.width
+        let pageNumber = Int(contentOffsetX / pageWidth)
+        self.setPageControl(currentPageNumber: pageNumber)
     }
 }
