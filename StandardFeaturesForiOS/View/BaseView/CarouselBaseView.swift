@@ -15,13 +15,13 @@ class CarouselBaseView: UIView {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        self.initUI()
+        self.initCollectionView()
         self.initPageControl()
     }
 }
 // MARK: - Initialized Method
 extension CarouselBaseView {
-    private func initUI() {
+    private func initCollectionView() {
         self.flowLayout.estimatedItemSize = .zero
         self.collectionView.decelerationRate = .fast
         self.collectionView.register(UINib(nibName: "CarouselCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "CarouselCollectionViewCell")
