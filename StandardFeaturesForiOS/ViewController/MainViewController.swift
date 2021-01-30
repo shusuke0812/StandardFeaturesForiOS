@@ -74,6 +74,9 @@ extension MainViewController: UITableViewDelegate {
         case .alert:
             print("DEBUG： アラートセルがタップされた")
             self.transitionAlertPage()
+        case .halfModal:
+            print("DEBUG: ハーフモーダルがタップされた")
+            self.transitionHalfModal()
         case .measuring:
             print("DEBUG： パフォーマンス計測がタップされた")
             self.transitionPerformanceMeasuringPage()
@@ -107,6 +110,12 @@ extension MainViewController {
     private func transitionAlertPage() {
         let s: UIStoryboard = UIStoryboard(name: "AlertViewController", bundle: nil)
         let vc: AlertViewController = s.instantiateInitialViewController() as! AlertViewController
+        self.present(vc, animated: true, completion: nil)
+    }
+    /// ハーフモーダル表示画面へ遷移
+    private func transitionHalfModal() {
+        let s: UIStoryboard = UIStoryboard(name: "HalfModalViewController", bundle: nil)
+        let vc: HalfModalViewController = s.instantiateInitialViewController() as! HalfModalViewController
         self.present(vc, animated: true, completion: nil)
     }
     /// パフォーマンス計測画面へ遷移

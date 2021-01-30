@@ -29,7 +29,7 @@ enum MainSectionType {
         case .core:
             return [.login, .advertising, .contact, .terms]
         case .module:
-            return [.onBording, .push, .carousel, .tapCopy, .accordion, .alert]
+            return [.onBording, .push, .carousel, .tapCopy, .accordion, .alert, .halfModal]
         case .test:
             return []
         case .performance:
@@ -50,6 +50,7 @@ enum MainRowType: String {
     case tapCopy        = "テキスト長押しコピー"
     case accordion      = "アコーディオンメニュー"
     case alert          = "アラート"
+    case halfModal      = "ハーフモーダル"
     case measuring      = "パフォーマンス計測"
 }
 
