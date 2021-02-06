@@ -63,7 +63,7 @@ class MainViewModel: NSObject {
         self.setSections()
     }
 }
-
+// MARK: - Setting Cell Method
 extension MainViewModel {
     private func setSections() {
         // このメソッド内でセクションの設定を行う（ex. ログインしているときは〇〇）
@@ -75,7 +75,16 @@ extension MainViewModel {
         ]
     }
 }
-
+extension MainViewModel {
+    /// cell生成メソッド
+    func makeMainModuleViewCell(tableView: UITableView, sectionType: MainSectionType, indexPath: IndexPath) -> MainModuleViewCell {
+        let cell: MainModuleViewCell = tableView.dequeueReusableCell(withIdentifier: "MainModuleViewCell", for: indexPath) as! MainModuleViewCell
+        let rowType: MainRowType = sectionType.rows[indexPath.row]
+        cell.titleLabel.text = rowType.rawValue
+        return cell
+    }
+}
+// MARK: - UITableView DataSource Method
 extension MainViewModel: UITableViewDataSource {
     func numberOfSections(in tableView: UITableView) -> Int {
         return self.sections.count
@@ -98,15 +107,5 @@ extension MainViewModel: UITableViewDataSource {
         case .performance:
             return self.makeMainModuleViewCell(tableView: tableView, sectionType: sectionType, indexPath: indexPath)
         }
-    }
-}
-
-extension MainViewModel {
-    /// cell生成メソッド
-    func makeMainModuleViewCell(tableView: UITableView, sectionType: MainSectionType, indexPath: IndexPath) -> MainModuleViewCell {
-        let cell: MainModuleViewCell = tableView.dequeueReusableCell(withIdentifier: "MainModuleViewCell", for: indexPath) as! MainModuleViewCell
-        let rowType: MainRowType = sectionType.rows[indexPath.row]
-        cell.titleLabel.text = rowType.rawValue
-        return cell
     }
 }

@@ -26,7 +26,7 @@ class AlertViewController: UIViewController {
         self.showActionSheetAlert()
     }
 }
-
+// MARK: - Private Method
 extension AlertViewController {
     /// デフォルトスタイルのアラート
     private func showDefaultAlert() {

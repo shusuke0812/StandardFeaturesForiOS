@@ -17,7 +17,6 @@ class PerformanceMeasuringViewController: UIViewController {
         self.osLong()
     }
 }
-
 extension PerformanceMeasuringViewController {
     /// メソッドの処理時間を計測する（単一スレッドの場合のみ有効？）
     internal func performanceMeasuring() {

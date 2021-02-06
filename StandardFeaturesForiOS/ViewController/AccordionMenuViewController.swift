@@ -51,7 +51,7 @@ class AccordionMenuViewController: UIViewController {
         }
     }
 }
-
+// MARK: - Setting UI Method
 extension AccordionMenuViewController {
     private func setUI() {
         // textViewのフォントスタイルを設定

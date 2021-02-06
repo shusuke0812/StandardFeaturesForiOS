@@ -14,7 +14,7 @@ class MainBaseView: UIView {
         self.registerTableViewCell()
     }
 }
-
+// MARK: - Initialized Method
 extension MainBaseView {
     func registerTableViewCell() {
         let coreNib = UINib(nibName: "MainCoreViewCell", bundle: nil)

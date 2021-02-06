@@ -17,7 +17,7 @@ class TapCopyUILabel: UILabel {
         self.setTapCopy()
     }
 }
-
+// MARK: - Custom Method
 extension TapCopyUILabel {
     override var canBecomeFirstResponder: Bool { return true }
     /// 長押しタップでテキストをコピー

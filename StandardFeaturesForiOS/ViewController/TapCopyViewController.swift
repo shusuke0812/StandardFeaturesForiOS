@@ -30,7 +30,7 @@ class TapCopyViewController: UIViewController {
         self.textView.endEditing(true)
     }
 }
-
+// MARK: - Private Method
 extension TapCopyViewController {
     private func setUI() {
         // キーボードに完了ボタンを設定
