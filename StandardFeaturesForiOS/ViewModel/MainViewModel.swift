@@ -14,15 +14,15 @@ import UIKit
  */
 
 /// 機能一覧セクション
-enum MainSectionType {
+enum MainSectionType: String {
     /// どのアプリにもありそうなコア機能
-    case core
+    case core   = "主機能"
     /// 周辺機能
-    case module
+    case module = "周辺機能"
     /// テスト
-    case test
+    case test   = "テスト"
     /// パフォーマンス計測
-    case performance
+    case performance = "パフォーマンス"
     
     internal var rows: [MainRowType] {
         switch self {
@@ -88,6 +88,9 @@ extension MainViewModel {
 extension MainViewModel: UITableViewDataSource {
     func numberOfSections(in tableView: UITableView) -> Int {
         return self.sections.count
+    }
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        return self.sections[section].rawValue
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.sections[section].rows.count
