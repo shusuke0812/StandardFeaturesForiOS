@@ -36,38 +36,38 @@ extension MainViewController {
     // TODO：各セル毎に同じような画面遷移の処理を書く必要があるので、一つにまとめられないか検討する
     /// カルーセル表示画面へ遷移
     private func transitionCarouselPage() {
-        let s: UIStoryboard = UIStoryboard(name: "CarouselViewController", bundle: nil)
-        let vc: CarouselViewController = s.instantiateInitialViewController() as! CarouselViewController
+        let s = UIStoryboard(name: "CarouselViewController", bundle: nil)
+        let vc = s.instantiateInitialViewController() as! CarouselViewController
         self.present(vc, animated: true, completion: nil)
     }
     /// 長押しコピー画面へ遷移
     private func transitionTapCopyPage() {
-        let s: UIStoryboard = UIStoryboard(name: "TapCopyViewController", bundle: nil)
-        let vc: TapCopyViewController = s.instantiateInitialViewController() as! TapCopyViewController
+        let s = UIStoryboard(name: "TapCopyViewController", bundle: nil)
+        let vc = s.instantiateInitialViewController() as! TapCopyViewController
         self.present(vc, animated: true, completion: nil)
     }
     /// アコーディオン画面へ遷移
     private func transitionAccordionMenuPage() {
-        let s: UIStoryboard = UIStoryboard(name: "AccordionMenuViewController", bundle: nil)
-        let vc: AccordionMenuViewController = s.instantiateInitialViewController() as! AccordionMenuViewController
+        let s = UIStoryboard(name: "AccordionMenuViewController", bundle: nil)
+        let vc = s.instantiateInitialViewController() as! AccordionMenuViewController
         self.present(vc, animated: true, completion: nil)
     }
     /// アラート表示画面へ遷移
     private func transitionAlertPage() {
-        let s: UIStoryboard = UIStoryboard(name: "AlertViewController", bundle: nil)
-        let vc: AlertViewController = s.instantiateInitialViewController() as! AlertViewController
+        let s = UIStoryboard(name: "AlertViewController", bundle: nil)
+        let vc = s.instantiateInitialViewController() as! AlertViewController
         self.present(vc, animated: true, completion: nil)
     }
     /// ハーフモーダル表示画面へ遷移
     private func transitionHalfModal() {
-        let s: UIStoryboard = UIStoryboard(name: "HalfModalViewController", bundle: nil)
-        let vc: HalfModalViewController = s.instantiateInitialViewController() as! HalfModalViewController
+        let s = UIStoryboard(name: "HalfModalViewController", bundle: nil)
+        let vc = s.instantiateInitialViewController() as! HalfModalViewController
         self.present(vc, animated: true, completion: nil)
     }
     /// パフォーマンス計測画面へ遷移
     private func transitionPerformanceMeasuringPage() {
-        let s: UIStoryboard = UIStoryboard(name: "PerformanceMeasuringViewController", bundle: nil)
-        let vc: PerformanceMeasuringViewController = s.instantiateInitialViewController() as! PerformanceMeasuringViewController
+        let s = UIStoryboard(name: "PerformanceMeasuringViewController", bundle: nil)
+        let vc = s.instantiateInitialViewController() as! PerformanceMeasuringViewController
         self.present(vc, animated: true, completion: nil)
     }
 }
