@@ -58,7 +58,7 @@ extension MainViewController {
         let vc = s.instantiateInitialViewController() as! AlertViewController
         self.present(vc, animated: true, completion: nil)
     }
-    /// ハーフモーダル表示画面へ遷移
+    /// ハーフモーダルで画面を表示
     private func transitionHalfModal() {
         let s = UIStoryboard(name: "HalfModalViewController", bundle: nil)
         let vc = s.instantiateInitialViewController() as! HalfModalViewController
