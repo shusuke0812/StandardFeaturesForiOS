@@ -19,6 +19,8 @@ enum MainSectionType: String {
     case core   = "主機能"
     /// 周辺機能
     case module = "周辺機能"
+    /// アプリ連携機能
+    case appLink = "アプリ連携"
     /// テスト
     case test   = "テスト"
     /// パフォーマンス計測
@@ -30,6 +32,8 @@ enum MainSectionType: String {
             return [.login, .advertising, .contact, .terms]
         case .module:
             return [.onBording, .push, .carousel, .tapCopy, .accordion, .alert, .halfModal]
+        case .appLink:
+            return [.healthCare]
         case .test:
             return []
         case .performance:
@@ -52,6 +56,7 @@ enum MainRowType: String {
     case alert          = "アラート"
     case halfModal      = "ハーフモーダル"
     case measuring      = "パフォーマンス計測"
+    case healthCare     = "ヘルスケア"
 }
 
 class MainViewModel: NSObject {
@@ -70,6 +75,7 @@ extension MainViewModel {
         self.sections = [
             .core,
             .module,
+            .appLink,
             .test,
             .performance
         ]
@@ -99,11 +105,10 @@ extension MainViewModel: UITableViewDataSource {
         let sectionType: MainSectionType = self.sections[indexPath.section]
         switch sectionType {
         case .core:
-            let cell: MainCoreViewCell = tableView.dequeueReusableCell(withIdentifier: "MainCoreViewCell", for: indexPath) as! MainCoreViewCell
-            let rowType: MainRowType = sectionType.rows[indexPath.row]
-            cell.titleLabel.text = rowType.rawValue
-            return cell
+            return self.makeMainModuleViewCell(tableView: tableView, sectionType: sectionType, indexPath: indexPath)
         case .module:
+            return self.makeMainModuleViewCell(tableView: tableView, sectionType: sectionType, indexPath: indexPath)
+        case .appLink:
             return self.makeMainModuleViewCell(tableView: tableView, sectionType: sectionType, indexPath: indexPath)
         case .test:
             return self.makeMainModuleViewCell(tableView: tableView, sectionType: sectionType, indexPath: indexPath)

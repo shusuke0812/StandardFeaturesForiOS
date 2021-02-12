@@ -74,6 +74,8 @@ extension MainViewController: UITableViewDelegate {
             return 50
         case .module:
             return 50
+        case .appLink:
+            return 50
         case .test:
             return 50
         case .performance:
@@ -113,6 +115,8 @@ extension MainViewController: UITableViewDelegate {
         case .measuring:
             print("DEBUG： パフォーマンス計測がタップされた")
             self.transitionPerformanceMeasuringPage()
+        case .healthCare:
+            print("DEBUG： ヘルスケアアプリがタップされた")
         }
         // セルの選択状態を解除
         self.baseView.tableView.deselectRow(at: indexPath, animated: true)
