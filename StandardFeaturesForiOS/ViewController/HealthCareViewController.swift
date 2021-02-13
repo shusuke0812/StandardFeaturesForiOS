@@ -11,6 +11,10 @@ import HealthKit
 class HealthCareViewController: UIViewController {
     
     @IBOutlet weak var healthCareConnectionButton: UIButton!
+    @IBOutlet weak var biologicalSexLabel: UILabel!
+    @IBOutlet weak var bloodTypeLabel: UILabel!
+    @IBOutlet weak var stepCountLabel: UILabel!
+    @IBOutlet weak var bodyMassLabel: UILabel!
     /// HealthStore
     private let healthStore = HKHealthStore()
     
@@ -47,6 +51,9 @@ extension HealthCareViewController {
             }
         }
     }
+    private func readHealthCareData() {
+        
+    }
 }
 // MARK: - Setting UI Method
 extension HealthCareViewController {
@@ -54,5 +61,11 @@ extension HealthCareViewController {
         // 連携ボタンの設定
         self.healthCareConnectionButton.layer.masksToBounds = true
         self.healthCareConnectionButton.layer.cornerRadius = 5
+        // データを反映する各種ラベルの設定
+        let initLabelText = "データがありません"
+        self.biologicalSexLabel.text = initLabelText
+        self.bloodTypeLabel.text = initLabelText
+        self.stepCountLabel.text = initLabelText
+        self.bodyMassLabel.text = initLabelText
     }
 }
