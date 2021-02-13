@@ -47,5 +47,9 @@
 	</array>
 	<key>UIUserInterfaceStyle</key>
 	<string>Light</string>
+	<key>NSHealthShareUsageDescription</key>
+	<string>ヘルスケア情報を読み込みます</string>
+	<key>NSHealthUpdateUsageDescription</key>
+	<string>ヘルスケア情報を更新します</string>
 </dict>
 </plist>
