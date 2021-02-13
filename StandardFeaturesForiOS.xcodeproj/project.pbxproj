@@ -26,6 +26,7 @@
 		9C95F8EE258DBC1000545BE1 /* CarouselViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C95F8ED258DBC1000545BE1 /* CarouselViewModel.swift */; };
 		9C96F48A25D75D03009E9304 /* HealthCareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C96F48925D75D03009E9304 /* HealthCareViewController.swift */; };
 		9C96F48D25D75D13009E9304 /* HealthCareViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C96F48C25D75D13009E9304 /* HealthCareViewController.storyboard */; };
+		9C96F49125D76276009E9304 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C96F49025D76276009E9304 /* HealthKit.framework */; };
 		9CAD648725199186000B0A33 /* UITextView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CAD648625199186000B0A33 /* UITextView+Extension.swift */; };
 		9CAD648C2519BBB9000B0A33 /* TapCopyUILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CAD648B2519BBB9000B0A33 /* TapCopyUILabel.swift */; };
 		9CAD649F251A2956000B0A33 /* AccordionMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CAD649E251A2956000B0A33 /* AccordionMenuViewController.swift */; };
@@ -63,6 +64,8 @@
 		9C95F8ED258DBC1000545BE1 /* CarouselViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselViewModel.swift; sourceTree = "<group>"; };
 		9C96F48925D75D03009E9304 /* HealthCareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthCareViewController.swift; sourceTree = "<group>"; };
 		9C96F48C25D75D13009E9304 /* HealthCareViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HealthCareViewController.storyboard; sourceTree = "<group>"; };
+		9C96F48F25D76276009E9304 /* StandardFeaturesForiOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = StandardFeaturesForiOS.entitlements; sourceTree = "<group>"; };
+		9C96F49025D76276009E9304 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
 		9CAD648625199186000B0A33 /* UITextView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextView+Extension.swift"; sourceTree = "<group>"; };
 		9CAD648B2519BBB9000B0A33 /* TapCopyUILabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapCopyUILabel.swift; sourceTree = "<group>"; };
 		9CAD649E251A2956000B0A33 /* AccordionMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccordionMenuViewController.swift; sourceTree = "<group>"; };
@@ -90,6 +93,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				913C3D78A0BAE40BB2461E2B /* Pods_StandardFeaturesForiOS.framework in Frameworks */,
+				9C96F49125D76276009E9304 /* HealthKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -161,6 +165,7 @@
 		9CB84D3A25177CB500179CFE /* StandardFeaturesForiOS */ = {
 			isa = PBXGroup;
 			children = (
+				9C96F48F25D76276009E9304 /* StandardFeaturesForiOS.entitlements */,
 				9CEC200F25D41CC4007C986C /* Static */,
 				9CAD648F2519C553000B0A33 /* CustomClass */,
 				9CAD648525198E21000B0A33 /* Extensions */,
@@ -247,6 +252,7 @@
 		E28A24750C90D0C4C065836A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9C96F49025D76276009E9304 /* HealthKit.framework */,
 				C56AED5FD90E2A79225BD698 /* Pods_StandardFeaturesForiOS.framework */,
 			);
 			name = Frameworks;
@@ -543,6 +549,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = StandardFeaturesForiOS/StandardFeaturesForiOS.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2XL9QYTD77;
 				INFOPLIST_FILE = StandardFeaturesForiOS/Info.plist;
@@ -563,6 +570,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = StandardFeaturesForiOS/StandardFeaturesForiOS.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2XL9QYTD77;
 				INFOPLIST_FILE = StandardFeaturesForiOS/Info.plist;
