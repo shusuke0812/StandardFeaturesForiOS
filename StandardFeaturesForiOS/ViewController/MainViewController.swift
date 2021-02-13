@@ -64,6 +64,11 @@ extension MainViewController {
         let vc = Storyboard.PerformanceMeasuringViewController.instantiate(PerformanceMeasuringViewController.self, inBundle: nil)
         self.present(vc, animated: true, completion: nil)
     }
+    /// ヘルスケアアプリ連携画面へ遷移
+    private func transitionHealthCarePage() {
+        let vc = Storyboard.HealthCareViewController.instantiate(HealthCareViewController.self, inBundle: nil)
+        self.present(vc, animated: true, completion: nil)
+    }
 }
 // MARK: - UITableView Delegate Method
 extension MainViewController: UITableViewDelegate {
@@ -117,6 +122,7 @@ extension MainViewController: UITableViewDelegate {
             self.transitionPerformanceMeasuringPage()
         case .healthCare:
             print("DEBUG： ヘルスケアアプリがタップされた")
+            self.transitionHealthCarePage()
         }
         // セルの選択状態を解除
         self.baseView.tableView.deselectRow(at: indexPath, animated: true)

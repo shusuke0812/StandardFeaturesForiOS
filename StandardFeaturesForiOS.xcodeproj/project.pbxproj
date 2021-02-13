@@ -24,6 +24,8 @@
 		9C90941225221C890014C951 /* PerformanceMeasuringViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C90941125221C890014C951 /* PerformanceMeasuringViewController.storyboard */; };
 		9C95F8EB258DB87A00545BE1 /* CarouselBaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C95F8EA258DB87A00545BE1 /* CarouselBaseView.swift */; };
 		9C95F8EE258DBC1000545BE1 /* CarouselViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C95F8ED258DBC1000545BE1 /* CarouselViewModel.swift */; };
+		9C96F48A25D75D03009E9304 /* HealthCareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C96F48925D75D03009E9304 /* HealthCareViewController.swift */; };
+		9C96F48D25D75D13009E9304 /* HealthCareViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C96F48C25D75D13009E9304 /* HealthCareViewController.storyboard */; };
 		9CAD648725199186000B0A33 /* UITextView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CAD648625199186000B0A33 /* UITextView+Extension.swift */; };
 		9CAD648C2519BBB9000B0A33 /* TapCopyUILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CAD648B2519BBB9000B0A33 /* TapCopyUILabel.swift */; };
 		9CAD649F251A2956000B0A33 /* AccordionMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CAD649E251A2956000B0A33 /* AccordionMenuViewController.swift */; };
@@ -59,6 +61,8 @@
 		9C90941125221C890014C951 /* PerformanceMeasuringViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PerformanceMeasuringViewController.storyboard; sourceTree = "<group>"; };
 		9C95F8EA258DB87A00545BE1 /* CarouselBaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselBaseView.swift; sourceTree = "<group>"; };
 		9C95F8ED258DBC1000545BE1 /* CarouselViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselViewModel.swift; sourceTree = "<group>"; };
+		9C96F48925D75D03009E9304 /* HealthCareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthCareViewController.swift; sourceTree = "<group>"; };
+		9C96F48C25D75D13009E9304 /* HealthCareViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HealthCareViewController.storyboard; sourceTree = "<group>"; };
 		9CAD648625199186000B0A33 /* UITextView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextView+Extension.swift"; sourceTree = "<group>"; };
 		9CAD648B2519BBB9000B0A33 /* TapCopyUILabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapCopyUILabel.swift; sourceTree = "<group>"; };
 		9CAD649E251A2956000B0A33 /* AccordionMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccordionMenuViewController.swift; sourceTree = "<group>"; };
@@ -182,6 +186,7 @@
 				9C8968952521661000AC4315 /* CarouselViewController.storyboard */,
 				9C90941125221C890014C951 /* PerformanceMeasuringViewController.storyboard */,
 				9C8BB8A32531924B008B9DE1 /* HalfModalViewController.storyboard */,
+				9C96F48C25D75D13009E9304 /* HealthCareViewController.storyboard */,
 			);
 			path = Storyboard;
 			sourceTree = "<group>";
@@ -196,6 +201,7 @@
 				9C8968922521660500AC4315 /* CarouselViewController.swift */,
 				9C90940E25221C770014C951 /* PerformanceMeasuringViewController.swift */,
 				9C8BB8A025319231008B9DE1 /* HalfModalViewController.swift */,
+				9C96F48925D75D03009E9304 /* HealthCareViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -317,6 +323,7 @@
 				9C8DB1442518F94100A97CC0 /* TapCopyViewController.storyboard in Resources */,
 				9CB84D662517AE3500179CFE /* MainModuleViewCell.xib in Resources */,
 				9C90941225221C890014C951 /* PerformanceMeasuringViewController.storyboard in Resources */,
+				9C96F48D25D75D13009E9304 /* HealthCareViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -370,6 +377,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9CB84D4025177CB500179CFE /* MainViewController.swift in Sources */,
+				9C96F48A25D75D03009E9304 /* HealthCareViewController.swift in Sources */,
 				9C8BB8A125319231008B9DE1 /* HalfModalViewController.swift in Sources */,
 				9CB84D5E2517A76F00179CFE /* MainCoreViewCell.swift in Sources */,
 				9C8DB13C25184AED00A97CC0 /* MainBaseView.swift in Sources */,
