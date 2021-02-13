@@ -66,6 +66,7 @@ extension HealthCareViewController {
     private func updatedHealthCareData() {
         self.readBloodType()
         self.readBiologicalSex()
+        self.readStepCount()
     }
     /// 性別を読み込む
     private func readBiologicalSex() {
@@ -112,6 +113,24 @@ extension HealthCareViewController {
         } catch {
             print("DEBUG: \(error.localizedDescription)")
         }
+    }
+    /// 歩数を読み込む
+    private func readStepCount() {
+        // 今日の日付
+        let today = Date()
+        // 昨日の日付
+        let yesterday = Calendar.current.date(byAdding: .day, value: -1, to: today)
+        // 歩数設定
+        let type = HKSampleType.quantityType(forIdentifier: .stepCount)!
+        let predicate = HKQuery.predicateForSamples(withStart: yesterday, end: today)
+        let query = HKStatisticsQuery(quantityType: type, quantitySamplePredicate: predicate, options: .cumulativeSum) { statisticsQuery, statistics, error in
+            DispatchQueue.main.async {
+                if let quantity = statistics?.sumQuantity() {
+                    self.stepCountLabel.text = "\(Int(quantity.doubleValue(for: HKUnit.count())))" + " 歩"
+                }
+            }
+        }
+        self.healthStore.execute(query)
     }
 }
 // MARK: - Setting UI Method
