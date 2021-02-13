@@ -9,9 +9,17 @@ import UIKit
 import HealthKit
 
 class HealthCareViewController: UIViewController {
+    
+    @IBOutlet weak var healthCareConnectionButton: UIButton!
+    
     // MARK: - Lifecycle Method
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.initUI()
+    }
+    // MARK: - Action Method
+    @IBAction func didTapHealthCareConnectionButton(_ sender: Any) {
+        self.setHealthCareAccess()
     }
 }
 // MARK: - HealthKit Method
@@ -35,5 +43,13 @@ extension HealthCareViewController {
                 print("DEBUG: 認証拒否")
             }
         }
+    }
+}
+// MARK: - Setting UI Method
+extension HealthCareViewController {
+    private func initUI() {
+        // 連携ボタンの設定
+        self.healthCareConnectionButton.layer.masksToBounds = true
+        self.healthCareConnectionButton.layer.cornerRadius = 5
     }
 }

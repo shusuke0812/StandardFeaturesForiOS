@@ -22,15 +22,34 @@
                                     <navigationItem title="ヘルスケアアプリ連携" id="wIb-Tv-D7r"/>
                                 </items>
                             </navigationBar>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="shY-z6-g3d">
+                                <rect key="frame" x="16" y="138" width="382" height="45"/>
+                                <color key="backgroundColor" systemColor="systemPinkColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="x56-qN-8ZE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="ヘルスケア連携"/>
+                                <connections>
+                                    <action selector="didTapHealthCareConnectionButton:" destination="f0g-9i-MgD" eventType="touchUpInside" id="Mxx-Rc-jAa"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="PX3-UC-t3N"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="UEy-H0-AYr" firstAttribute="trailing" secondItem="PX3-UC-t3N" secondAttribute="trailing" id="Kmj-ee-dNl"/>
+                            <constraint firstItem="shY-z6-g3d" firstAttribute="leading" secondItem="PX3-UC-t3N" secondAttribute="leading" constant="16" id="a2d-nM-fuT"/>
                             <constraint firstItem="UEy-H0-AYr" firstAttribute="leading" secondItem="PX3-UC-t3N" secondAttribute="leading" id="awi-Xe-aIc"/>
                             <constraint firstItem="UEy-H0-AYr" firstAttribute="top" secondItem="PX3-UC-t3N" secondAttribute="top" id="g4j-ER-NF3"/>
+                            <constraint firstItem="PX3-UC-t3N" firstAttribute="trailing" secondItem="shY-z6-g3d" secondAttribute="trailing" constant="16" id="vG0-53-G91"/>
+                            <constraint firstItem="shY-z6-g3d" firstAttribute="top" secondItem="UEy-H0-AYr" secondAttribute="bottom" constant="50" id="wox-IV-sov"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="healthCareConnectionButton" destination="shY-z6-g3d" id="hCR-yD-dRd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yYC-c0-Rfi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -40,6 +59,9 @@
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
