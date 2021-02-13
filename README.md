@@ -36,6 +36,6 @@ Swiftを使ったiOSアプリ開発に良く使う機能一覧
 
 ## 参考文献
 - [アコーディオンメニュー](https://github.com/nRewik/UIStackViewEasyAnimation), [もっと見るボタン](https://qiita.com/kimioman/items/277dcc3a8bf59eba9751)
-- 
+- [HealthKit導入（Apple Dev Documentation）](https://developer.apple.com/documentation/healthkit/setting_up_healthkit)
 
 
