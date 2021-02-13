@@ -11,6 +11,8 @@ import HealthKit
 class HealthCareViewController: UIViewController {
     
     @IBOutlet weak var healthCareConnectionButton: UIButton!
+    /// HealthStore
+    private let healthStore = HKHealthStore()
     
     // MARK: - Lifecycle Method
     override func viewDidLoad() {
@@ -19,7 +21,7 @@ class HealthCareViewController: UIViewController {
     }
     // MARK: - Action Method
     @IBAction func didTapHealthCareConnectionButton(_ sender: Any) {
-        UIAlertController.showAlertView(vc: self, title: "ヘルスケアアプリと\n連携しますか", message: nil, preferredStyle: .alert, okBtnLabel: "OK", cancelBtnLabel: "キャンセル") { 
+        UIAlertController.showAlertView(vc: self, title: "ヘルスケアアプリと\n連携しますか", message: nil, preferredStyle: .alert, okBtnLabel: "OK", cancelBtnLabel: "キャンセル") {
             self.setHealthCareAccess()
         }
     }
@@ -37,8 +39,7 @@ extension HealthCareViewController {
         let writeData: Set<HKSampleType> = [
             HKSampleType.quantityType(forIdentifier: .bodyMass)!
         ]
-        let healthStore = HKHealthStore()
-        healthStore.requestAuthorization(toShare: writeData, read: readData) { status, error in
+        self.healthStore.requestAuthorization(toShare: writeData, read: readData) { status, error in
             if status {
                 print("DEBUG: 認証済み")
             } else {
