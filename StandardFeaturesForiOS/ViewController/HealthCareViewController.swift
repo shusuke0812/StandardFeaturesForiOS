@@ -19,7 +19,9 @@ class HealthCareViewController: UIViewController {
     }
     // MARK: - Action Method
     @IBAction func didTapHealthCareConnectionButton(_ sender: Any) {
-        self.setHealthCareAccess()
+        UIAlertController.showAlertView(vc: self, title: "ヘルスケアアプリと\n連携しますか", message: nil, preferredStyle: .alert, okBtnLabel: "OK", cancelBtnLabel: "キャンセル") { 
+            self.setHealthCareAccess()
+        }
     }
 }
 // MARK: - HealthKit Method
