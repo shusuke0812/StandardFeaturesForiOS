@@ -28,6 +28,7 @@
 		9C96F48D25D75D13009E9304 /* HealthCareViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C96F48C25D75D13009E9304 /* HealthCareViewController.storyboard */; };
 		9C96F49125D76276009E9304 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C96F49025D76276009E9304 /* HealthKit.framework */; };
 		9C96F49425D790B1009E9304 /* UIAlertController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C96F49325D790B1009E9304 /* UIAlertController+Extension.swift */; };
+		9C9791F125D7FD890099CB1D /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9791F025D7FD880099CB1D /* Constant.swift */; };
 		9CAD648725199186000B0A33 /* UITextView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CAD648625199186000B0A33 /* UITextView+Extension.swift */; };
 		9CAD648C2519BBB9000B0A33 /* TapCopyUILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CAD648B2519BBB9000B0A33 /* TapCopyUILabel.swift */; };
 		9CAD649F251A2956000B0A33 /* AccordionMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CAD649E251A2956000B0A33 /* AccordionMenuViewController.swift */; };
@@ -68,6 +69,7 @@
 		9C96F48F25D76276009E9304 /* StandardFeaturesForiOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = StandardFeaturesForiOS.entitlements; sourceTree = "<group>"; };
 		9C96F49025D76276009E9304 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
 		9C96F49325D790B1009E9304 /* UIAlertController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIAlertController+Extension.swift"; sourceTree = "<group>"; };
+		9C9791F025D7FD880099CB1D /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		9CAD648625199186000B0A33 /* UITextView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextView+Extension.swift"; sourceTree = "<group>"; };
 		9CAD648B2519BBB9000B0A33 /* TapCopyUILabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapCopyUILabel.swift; sourceTree = "<group>"; };
 		9CAD649E251A2956000B0A33 /* AccordionMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccordionMenuViewController.swift; sourceTree = "<group>"; };
@@ -248,6 +250,7 @@
 			isa = PBXGroup;
 			children = (
 				9CEC201025D41CD9007C986C /* Storyboard.swift */,
+				9C9791F025D7FD880099CB1D /* Constant.swift */,
 			);
 			path = Static;
 			sourceTree = "<group>";
@@ -404,6 +407,7 @@
 				9C95F8EE258DBC1000545BE1 /* CarouselViewModel.swift in Sources */,
 				9C8DB1412518F7DC00A97CC0 /* TapCopyViewController.swift in Sources */,
 				9CAD648C2519BBB9000B0A33 /* TapCopyUILabel.swift in Sources */,
+				9C9791F125D7FD890099CB1D /* Constant.swift in Sources */,
 				9C89689B252166AB00AC4315 /* CarouselCollectionViewCell.swift in Sources */,
 				9C8536E7258E0ABA00EB2D74 /* CarouselCollectionFlowLayout.swift in Sources */,
 			);

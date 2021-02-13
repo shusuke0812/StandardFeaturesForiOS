@@ -17,8 +17,6 @@ class HealthCareViewController: UIViewController {
     @IBOutlet weak var bodyMassLabel: UILabel!
     /// HealthStore
     private let healthStore = HKHealthStore()
-    /// HealthCare Authフラグ
-    private var isHealthCareRequestAuthorization = false
     
     // MARK: - Lifecycle Method
     override func viewDidLoad() {
@@ -28,10 +26,12 @@ class HealthCareViewController: UIViewController {
     }
     // MARK: - Action Method
     @IBAction func didTapHealthCareConnectionButton(_ sender: Any) {
-        if !isHealthCareRequestAuthorization {
+        if !UserDefaults.standard.bool(forKey: Constant.UserDefaultsKey.healtCareAuthRequest) {
             UIAlertController.showAlertView(vc: self, title: "ヘルスケアアプリと\n連携しますか", message: nil, preferredStyle: .alert, okBtnLabel: "OK", cancelBtnLabel: "キャンセル") {
                 self.setHealthCareAccess { status in
-                    if status { self.updatedHealthCareData() }
+                    if status {
+                        self.updatedHealthCareData()
+                    }
                 }
             }
         } else {
@@ -55,7 +55,7 @@ extension HealthCareViewController {
         self.healthStore.requestAuthorization(toShare: writeData, read: readData) { status, error in
             if status {
                 print("DEBUG: 認証済み")
-                self.isHealthCareRequestAuthorization = true
+                UserDefaults.standard.set(true, forKey: Constant.UserDefaultsKey.healtCareAuthRequest)
                 completion(status)
             } else {
                 print("DEBUG: 認証拒否")
