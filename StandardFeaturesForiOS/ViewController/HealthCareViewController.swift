@@ -46,7 +46,8 @@ extension HealthCareViewController {
         let readData: Set<HKObjectType> = [
             HKObjectType.characteristicType(forIdentifier: .biologicalSex)!,
             HKObjectType.characteristicType(forIdentifier: .bloodType)!,
-            HKObjectType.quantityType(forIdentifier: .stepCount)!
+            HKObjectType.quantityType(forIdentifier: .stepCount)!,
+            HKObjectType.quantityType(forIdentifier: .bodyMass)!
         ]
         // 書き込めるデータの設定（体重）
         let writeData: Set<HKSampleType> = [
@@ -67,6 +68,7 @@ extension HealthCareViewController {
         self.readBloodType()
         self.readBiologicalSex()
         self.readStepCount()
+        self.readBodyMass()
     }
     /// 性別を読み込む
     private func readBiologicalSex() {
@@ -128,6 +130,26 @@ extension HealthCareViewController {
                 if let quantity = statistics?.sumQuantity() {
                     self.stepCountLabel.text = "\(Int(quantity.doubleValue(for: HKUnit.count())))" + " 歩"
                 }
+            }
+        }
+        self.healthStore.execute(query)
+    }
+    /// 体重を読み込む
+    private func readBodyMass() {
+        // 今日の日付
+        let today = Date()
+        // 昨日の日付
+        let yesterday = Calendar.current.date(byAdding: .day, value: -1, to: today)
+        // 体重設定
+        let type = HKSampleType.quantityType(forIdentifier: .bodyMass)!
+        let predicate = HKQuery.predicateForSamples(withStart: yesterday, end: today)
+        //let sortDescriptor = NSSortDescriptor(key: HKSampleSortIdentifierStartDate, ascending: false)
+        let limit = 0
+        let query = HKSampleQuery(sampleType: type, predicate: predicate, limit: limit, sortDescriptors: nil) { sampleQuery, samples, error in
+            guard let sample = samples?.first as? HKQuantitySample else { return }
+            let bodyMass = sample.quantity.doubleValue(for: HKUnit.gram()) / 1000
+            DispatchQueue.main.async {
+                self.bodyMassLabel.text = "\(bodyMass) kg"
             }
         }
         self.healthStore.execute(query)
