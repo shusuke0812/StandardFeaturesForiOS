@@ -11,11 +11,11 @@ import Intents
 
 struct Provider: IntentTimelineProvider {
     func placeholder(in context: Context) -> SimpleEntry {
-        SimpleEntry(date: Date(), configuration: ConfigurationIntent())
+        SimpleEntry(date: Date(), timeLineText: "TEST", configuration: ConfigurationIntent())
     }
 
     func getSnapshot(for configuration: ConfigurationIntent, in context: Context, completion: @escaping (SimpleEntry) -> ()) {
-        let entry = SimpleEntry(date: Date(), configuration: configuration)
+        let entry = SimpleEntry(date: Date(), timeLineText: "TEST", configuration: configuration)
         completion(entry)
     }
 
@@ -24,9 +24,14 @@ struct Provider: IntentTimelineProvider {
 
         // Generate a timeline consisting of five entries an hour apart, starting from the current date.
         let currentDate = Date()
+        var texts: [String] = []
+        for i in 0 ..< 5 {
+            texts.append("timeline: \(i) h")
+        }
         for hourOffset in 0 ..< 5 {
             let entryDate = Calendar.current.date(byAdding: .hour, value: hourOffset, to: currentDate)!
-            let entry = SimpleEntry(date: entryDate, configuration: configuration)
+            let entryText = texts[hourOffset]
+            let entry = SimpleEntry(date: entryDate, timeLineText: entryText, configuration: configuration)
             entries.append(entry)
         }
 
@@ -37,20 +42,23 @@ struct Provider: IntentTimelineProvider {
 
 struct SimpleEntry: TimelineEntry {
     let date: Date
+    let timeLineText: String
     let configuration: ConfigurationIntent
 }
-
+// MARK: - Setting View
 struct WidgetDemoEntryView : View {
     var entry: Provider.Entry
 
     var body: some View {
         VStack {
             Text(entry.date, style: .time)
-            Text("Hello Wordl")
+            Text("TEST")
+            Text(entry.timeLineText)
+                .foregroundColor(.red)
         }
     }
 }
-
+// MARK: - Setting Widget Info
 @main
 struct WidgetDemo: Widget {
     let kind: String = "WidgetDemo"
@@ -63,10 +71,10 @@ struct WidgetDemo: Widget {
         .description("This is an example widget.")
     }
 }
-// MARK: - Preview Method
+// MARK: - Preview
 struct WidgetDemo_Previews: PreviewProvider {
     static var previews: some View {
-        WidgetDemoEntryView(entry: SimpleEntry(date: Date(), configuration: ConfigurationIntent()))
+        WidgetDemoEntryView(entry: SimpleEntry(date: Date(), timeLineText: "TEST", configuration: ConfigurationIntent()))
             .previewContext(WidgetPreviewContext(family: .systemSmall))
     }
 }
