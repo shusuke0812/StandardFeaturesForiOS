@@ -12,7 +12,7 @@
 
 import UIKit
 
-class MainViewController: UIViewController {
+class MainViewController: ContactViewController {
     /// BaseView
     private var baseView: MainBaseView { return self.view as! MainBaseView}
     /// ViewModel
@@ -96,6 +96,7 @@ extension MainViewController: UITableViewDelegate {
             print("DEBUG： 広告セルがタップされた")
         case .contact:
             print("DEBUG： お問い合わせセルがタップされた")
+            self.openMail()
         case .onBording:
             print("DEBUG： オンボーディングセルがタップされた")
         case .push:
