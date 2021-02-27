@@ -29,6 +29,7 @@
 		9C927FCE25E0A24E0025D405 /* WidgetDemo.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 9C927FCA25E0A24C0025D405 /* WidgetDemo.intentdefinition */; };
 		9C927FCF25E0A24E0025D405 /* WidgetDemo.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 9C927FCA25E0A24C0025D405 /* WidgetDemo.intentdefinition */; };
 		9C927FD225E0A24E0025D405 /* WidgetDemoExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 9C927FC225E0A24C0025D405 /* WidgetDemoExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		9C95D3DC25EA60CD0035CCE6 /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C95D3DB25EA60CD0035CCE6 /* ContactViewController.swift */; };
 		9C95F8EB258DB87A00545BE1 /* CarouselBaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C95F8EA258DB87A00545BE1 /* CarouselBaseView.swift */; };
 		9C95F8EE258DBC1000545BE1 /* CarouselViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C95F8ED258DBC1000545BE1 /* CarouselViewModel.swift */; };
 		9C96F48A25D75D03009E9304 /* HealthCareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C96F48925D75D03009E9304 /* HealthCareViewController.swift */; };
@@ -100,6 +101,7 @@
 		9C927FCA25E0A24C0025D405 /* WidgetDemo.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = WidgetDemo.intentdefinition; sourceTree = "<group>"; };
 		9C927FCB25E0A24E0025D405 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9C927FCD25E0A24E0025D405 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9C95D3DB25EA60CD0035CCE6 /* ContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
 		9C95F8EA258DB87A00545BE1 /* CarouselBaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselBaseView.swift; sourceTree = "<group>"; };
 		9C95F8ED258DBC1000545BE1 /* CarouselViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselViewModel.swift; sourceTree = "<group>"; };
 		9C96F48925D75D03009E9304 /* HealthCareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthCareViewController.swift; sourceTree = "<group>"; };
@@ -272,6 +274,7 @@
 				9C90940E25221C770014C951 /* PerformanceMeasuringViewController.swift */,
 				9C8BB8A025319231008B9DE1 /* HalfModalViewController.swift */,
 				9C96F48925D75D03009E9304 /* HealthCareViewController.swift */,
+				9C95D3DB25EA60CD0035CCE6 /* ContactViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -507,6 +510,7 @@
 				9C90940F25221C770014C951 /* PerformanceMeasuringViewController.swift in Sources */,
 				9CB84D582517871F00179CFE /* MainViewModel.swift in Sources */,
 				9C96F49425D790B1009E9304 /* UIAlertController+Extension.swift in Sources */,
+				9C95D3DC25EA60CD0035CCE6 /* ContactViewController.swift in Sources */,
 				9C95F8EE258DBC1000545BE1 /* CarouselViewModel.swift in Sources */,
 				9C8DB1412518F7DC00A97CC0 /* TapCopyViewController.swift in Sources */,
 				9CAD648C2519BBB9000B0A33 /* TapCopyUILabel.swift in Sources */,
