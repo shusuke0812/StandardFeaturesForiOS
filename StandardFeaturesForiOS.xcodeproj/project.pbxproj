@@ -37,6 +37,7 @@
 		9C96F49125D76276009E9304 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C96F49025D76276009E9304 /* HealthKit.framework */; };
 		9C96F49425D790B1009E9304 /* UIAlertController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C96F49325D790B1009E9304 /* UIAlertController+Extension.swift */; };
 		9C9791F125D7FD890099CB1D /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9791F025D7FD880099CB1D /* Constant.swift */; };
+		9C9D1E8B264430AE00B68880 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9C9D1E8A264430AE00B68880 /* GoogleService-Info.plist */; };
 		9CAD648725199186000B0A33 /* UITextView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CAD648625199186000B0A33 /* UITextView+Extension.swift */; };
 		9CAD648C2519BBB9000B0A33 /* TapCopyUILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CAD648B2519BBB9000B0A33 /* TapCopyUILabel.swift */; };
 		9CAD649F251A2956000B0A33 /* AccordionMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CAD649E251A2956000B0A33 /* AccordionMenuViewController.swift */; };
@@ -110,6 +111,7 @@
 		9C96F49025D76276009E9304 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
 		9C96F49325D790B1009E9304 /* UIAlertController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIAlertController+Extension.swift"; sourceTree = "<group>"; };
 		9C9791F025D7FD880099CB1D /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		9C9D1E8A264430AE00B68880 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		9CAD648625199186000B0A33 /* UITextView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextView+Extension.swift"; sourceTree = "<group>"; };
 		9CAD648B2519BBB9000B0A33 /* TapCopyUILabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapCopyUILabel.swift; sourceTree = "<group>"; };
 		9CAD649E251A2956000B0A33 /* AccordionMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccordionMenuViewController.swift; sourceTree = "<group>"; };
@@ -244,6 +246,7 @@
 				9CB84D4425177CB600179CFE /* Assets.xcassets */,
 				9CB84D4625177CB600179CFE /* LaunchScreen.storyboard */,
 				9CB84D4925177CB600179CFE /* Info.plist */,
+				9C9D1E8A264430AE00B68880 /* GoogleService-Info.plist */,
 			);
 			path = StandardFeaturesForiOS;
 			sourceTree = "<group>";
@@ -432,6 +435,7 @@
 				9CB84D662517AE3500179CFE /* MainModuleViewCell.xib in Resources */,
 				9C90941225221C890014C951 /* PerformanceMeasuringViewController.storyboard in Resources */,
 				9C96F48D25D75D13009E9304 /* HealthCareViewController.storyboard in Resources */,
+				9C9D1E8B264430AE00B68880 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

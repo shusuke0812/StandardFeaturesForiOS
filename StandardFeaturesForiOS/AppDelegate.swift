@@ -8,6 +8,7 @@
 import UIKit
 import IQKeyboardManagerSwift
 import HealthKit
+import Firebase
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -23,6 +24,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         } else {
             print("DEBUG: ヘルスケアに`非対応`です")
         }
+        // Firebase
+        FirebaseApp.configure()
         
         return true
     }

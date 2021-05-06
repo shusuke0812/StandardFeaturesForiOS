@@ -6,6 +6,10 @@ target 'StandardFeaturesForiOS' do
   use_frameworks!
 
   # Pods for StandardFeaturesForiOS
-	pod 'IQKeyboardManagerSwift'
+  # Firebase
+  pod 'Firebase/Core'
+  pod 'Firebase/Messaging'
+  # Util
+  pod 'IQKeyboardManagerSwift'
 
 end
