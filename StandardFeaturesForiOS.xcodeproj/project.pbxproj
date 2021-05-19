@@ -22,6 +22,8 @@
 		9C8DB1442518F94100A97CC0 /* TapCopyViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C8DB1432518F94100A97CC0 /* TapCopyViewController.storyboard */; };
 		9C90940F25221C770014C951 /* PerformanceMeasuringViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C90940E25221C770014C951 /* PerformanceMeasuringViewController.swift */; };
 		9C90941225221C890014C951 /* PerformanceMeasuringViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C90941125221C890014C951 /* PerformanceMeasuringViewController.storyboard */; };
+		9C91CE8326552FA8008F3260 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C91CE8226552FA8008F3260 /* CameraViewController.swift */; };
+		9C91CE8726552FFF008F3260 /* CameraViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C91CE8626552FFF008F3260 /* CameraViewController.storyboard */; };
 		9C927FC425E0A24C0025D405 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C927FC325E0A24C0025D405 /* WidgetKit.framework */; };
 		9C927FC625E0A24C0025D405 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C927FC525E0A24C0025D405 /* SwiftUI.framework */; };
 		9C927FC925E0A24C0025D405 /* WidgetDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C927FC825E0A24C0025D405 /* WidgetDemo.swift */; };
@@ -37,7 +39,7 @@
 		9C96F49125D76276009E9304 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C96F49025D76276009E9304 /* HealthKit.framework */; };
 		9C96F49425D790B1009E9304 /* UIAlertController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C96F49325D790B1009E9304 /* UIAlertController+Extension.swift */; };
 		9C9791F125D7FD890099CB1D /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9791F025D7FD880099CB1D /* Constant.swift */; };
-		9C9D1E8B264430AE00B68880 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9C9D1E8A264430AE00B68880 /* GoogleService-Info.plist */; };
+		9C9B8CAF2644A17800D5345F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9C9B8CAE2644A17800D5345F /* GoogleService-Info.plist */; };
 		9CAD648725199186000B0A33 /* UITextView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CAD648625199186000B0A33 /* UITextView+Extension.swift */; };
 		9CAD648C2519BBB9000B0A33 /* TapCopyUILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CAD648B2519BBB9000B0A33 /* TapCopyUILabel.swift */; };
 		9CAD649F251A2956000B0A33 /* AccordionMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CAD649E251A2956000B0A33 /* AccordionMenuViewController.swift */; };
@@ -95,6 +97,8 @@
 		9C8DB1432518F94100A97CC0 /* TapCopyViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TapCopyViewController.storyboard; sourceTree = "<group>"; };
 		9C90940E25221C770014C951 /* PerformanceMeasuringViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerformanceMeasuringViewController.swift; sourceTree = "<group>"; };
 		9C90941125221C890014C951 /* PerformanceMeasuringViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PerformanceMeasuringViewController.storyboard; sourceTree = "<group>"; };
+		9C91CE8226552FA8008F3260 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		9C91CE8626552FFF008F3260 /* CameraViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CameraViewController.storyboard; sourceTree = "<group>"; };
 		9C927FC225E0A24C0025D405 /* WidgetDemoExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = WidgetDemoExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C927FC325E0A24C0025D405 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		9C927FC525E0A24C0025D405 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
@@ -111,7 +115,7 @@
 		9C96F49025D76276009E9304 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
 		9C96F49325D790B1009E9304 /* UIAlertController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIAlertController+Extension.swift"; sourceTree = "<group>"; };
 		9C9791F025D7FD880099CB1D /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
-		9C9D1E8A264430AE00B68880 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		9C9B8CAE2644A17800D5345F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		9CAD648625199186000B0A33 /* UITextView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextView+Extension.swift"; sourceTree = "<group>"; };
 		9CAD648B2519BBB9000B0A33 /* TapCopyUILabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapCopyUILabel.swift; sourceTree = "<group>"; };
 		9CAD649E251A2956000B0A33 /* AccordionMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccordionMenuViewController.swift; sourceTree = "<group>"; };
@@ -245,8 +249,8 @@
 				9CB84D3B25177CB500179CFE /* AppDelegate.swift */,
 				9CB84D4425177CB600179CFE /* Assets.xcassets */,
 				9CB84D4625177CB600179CFE /* LaunchScreen.storyboard */,
+				9C9B8CAE2644A17800D5345F /* GoogleService-Info.plist */,
 				9CB84D4925177CB600179CFE /* Info.plist */,
-				9C9D1E8A264430AE00B68880 /* GoogleService-Info.plist */,
 			);
 			path = StandardFeaturesForiOS;
 			sourceTree = "<group>";
@@ -262,6 +266,7 @@
 				9C90941125221C890014C951 /* PerformanceMeasuringViewController.storyboard */,
 				9C8BB8A32531924B008B9DE1 /* HalfModalViewController.storyboard */,
 				9C96F48C25D75D13009E9304 /* HealthCareViewController.storyboard */,
+				9C91CE8626552FFF008F3260 /* CameraViewController.storyboard */,
 			);
 			path = Storyboard;
 			sourceTree = "<group>";
@@ -278,6 +283,7 @@
 				9C8BB8A025319231008B9DE1 /* HalfModalViewController.swift */,
 				9C96F48925D75D03009E9304 /* HealthCareViewController.swift */,
 				9C95D3DB25EA60CD0035CCE6 /* ContactViewController.swift */,
+				9C91CE8226552FA8008F3260 /* CameraViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -434,8 +440,9 @@
 				9C8DB1442518F94100A97CC0 /* TapCopyViewController.storyboard in Resources */,
 				9CB84D662517AE3500179CFE /* MainModuleViewCell.xib in Resources */,
 				9C90941225221C890014C951 /* PerformanceMeasuringViewController.storyboard in Resources */,
+				9C91CE8726552FFF008F3260 /* CameraViewController.storyboard in Resources */,
 				9C96F48D25D75D13009E9304 /* HealthCareViewController.storyboard in Resources */,
-				9C9D1E8B264430AE00B68880 /* GoogleService-Info.plist in Resources */,
+				9C9B8CAF2644A17800D5345F /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -513,6 +520,7 @@
 				9C848941251D6BF200192082 /* AlertViewController.swift in Sources */,
 				9C90940F25221C770014C951 /* PerformanceMeasuringViewController.swift in Sources */,
 				9CB84D582517871F00179CFE /* MainViewModel.swift in Sources */,
+				9C91CE8326552FA8008F3260 /* CameraViewController.swift in Sources */,
 				9C96F49425D790B1009E9304 /* UIAlertController+Extension.swift in Sources */,
 				9C95D3DC25EA60CD0035CCE6 /* ContactViewController.swift in Sources */,
 				9C95F8EE258DBC1000545BE1 /* CarouselViewModel.swift in Sources */,
@@ -722,7 +730,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = StandardFeaturesForiOS/StandardFeaturesForiOS.entitlements;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 2XL9QYTD77;
 				INFOPLIST_FILE = StandardFeaturesForiOS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -731,6 +740,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = jp.shusuke.ota.StandardFeaturesForiOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = StandardFeaturesForiOS;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -744,7 +754,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = StandardFeaturesForiOS/StandardFeaturesForiOS.entitlements;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 2XL9QYTD77;
 				INFOPLIST_FILE = StandardFeaturesForiOS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -753,6 +764,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = jp.shusuke.ota.StandardFeaturesForiOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = StandardFeaturesForiOS;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

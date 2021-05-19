@@ -33,7 +33,7 @@ enum MainSectionType: String {
         case .module:
             return [.onBording, .push, .carousel, .tapCopy, .accordion, .alert, .halfModal]
         case .appLink:
-            return [.healthCare]
+            return [.healthCare, .camera]
         case .test:
             return []
         case .performance:
@@ -57,6 +57,7 @@ enum MainRowType: String {
     case halfModal      = "ハーフモーダル"
     case measuring      = "パフォーマンス計測"
     case healthCare     = "ヘルスケア"
+    case camera         = "カメラ"
 }
 
 class MainViewModel: NSObject {

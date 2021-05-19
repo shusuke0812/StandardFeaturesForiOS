@@ -69,6 +69,11 @@ extension MainViewController {
         let vc = Storyboard.HealthCareViewController.instantiate(HealthCareViewController.self, inBundle: nil)
         self.present(vc, animated: true, completion: nil)
     }
+    /// カメラ画面へ遷移
+    private func transitionCamera() {
+        let vc = Storyboard.CameraViewController.instantiate(CameraViewController.self, inBundle: nil)
+        self.present(vc, animated: true, completion: nil)
+    }
 }
 // MARK: - UITableView Delegate Method
 extension MainViewController: UITableViewDelegate {
@@ -118,6 +123,8 @@ extension MainViewController: UITableViewDelegate {
         case .halfModal:
             print("DEBUG: ハーフモーダルがタップされた")
             self.transitionHalfModal()
+        case .camera:
+            self.transitionCamera()
         case .measuring:
             print("DEBUG： パフォーマンス計測がタップされた")
             self.transitionPerformanceMeasuringPage()
