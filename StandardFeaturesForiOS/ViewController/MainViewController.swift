@@ -123,6 +123,8 @@ extension MainViewController: UITableViewDelegate {
         case .halfModal:
             print("DEBUG: ハーフモーダルがタップされた")
             self.transitionHalfModal()
+        case .picker:
+            print()
         case .camera:
             self.transitionCamera()
         case .measuring:

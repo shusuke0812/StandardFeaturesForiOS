@@ -31,7 +31,7 @@ enum MainSectionType: String {
         case .core:
             return [.login, .advertising, .contact, .terms]
         case .module:
-            return [.onBording, .push, .carousel, .tapCopy, .accordion, .alert, .halfModal]
+            return [.onBording, .push, .carousel, .tapCopy, .accordion, .alert, .halfModal, .picker]
         case .appLink:
             return [.healthCare, .camera]
         case .test:
@@ -55,6 +55,7 @@ enum MainRowType: String {
     case accordion      = "アコーディオンメニュー"
     case alert          = "アラート"
     case halfModal      = "ハーフモーダル"
+    case picker         = "ピッカービュー"
     case measuring      = "パフォーマンス計測"
     case healthCare     = "ヘルスケア"
     case camera         = "カメラ"
