@@ -19,6 +19,7 @@ enum Storyboard: String {
     case HalfModalViewController
     case HealthCareViewController
     case CameraViewController
+    case PickerViewController
     
     func instantiate<VC: UIViewController>(_: VC.Type, inBundle bundle: Bundle?) -> VC {
         let s = UIStoryboard(name: self.rawValue, bundle: bundle)

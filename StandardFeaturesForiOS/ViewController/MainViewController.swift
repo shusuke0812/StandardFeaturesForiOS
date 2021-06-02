@@ -74,6 +74,11 @@ extension MainViewController {
         let vc = Storyboard.CameraViewController.instantiate(CameraViewController.self, inBundle: nil)
         self.present(vc, animated: true, completion: nil)
     }
+    /// ピッカービューへ遷移
+    private func transitionPickerView() {
+        let vc = Storyboard.PickerViewController.instantiate(PickerViewController.self, inBundle: nil)
+        self.present(vc, animated: true, completion: nil)
+    }
 }
 // MARK: - UITableView Delegate Method
 extension MainViewController: UITableViewDelegate {
@@ -124,7 +129,7 @@ extension MainViewController: UITableViewDelegate {
             print("DEBUG: ハーフモーダルがタップされた")
             self.transitionHalfModal()
         case .picker:
-            print()
+            self.transitionPickerView()
         case .camera:
             self.transitionCamera()
         case .measuring:
