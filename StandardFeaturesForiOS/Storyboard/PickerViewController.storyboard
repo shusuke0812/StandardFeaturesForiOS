@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PG1-Me-nt6">
-                                <rect key="frame" x="15" y="431.5" width="384" height="33"/>
+                                <rect key="frame" x="15" y="186" width="384" height="33"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title="設定"/>
                                 <connections>
@@ -25,7 +25,7 @@
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="タイマー設定" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dcw-ir-XbA">
-                                <rect key="frame" x="15" y="504.5" width="384" height="34"/>
+                                <rect key="frame" x="15" y="259" width="384" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
@@ -33,7 +33,7 @@
                                 </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ecg-SK-o4L">
-                                <rect key="frame" x="15" y="363.5" width="384" height="33"/>
+                                <rect key="frame" x="15" y="118" width="384" height="33"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title="難易度"/>
                                 <connections>
@@ -54,13 +54,13 @@
                             <constraint firstItem="PG1-Me-nt6" firstAttribute="leading" secondItem="CRW-Pv-Q35" secondAttribute="leading" constant="15" id="4hm-f0-MXt"/>
                             <constraint firstItem="NXD-CO-gEz" firstAttribute="trailing" secondItem="CRW-Pv-Q35" secondAttribute="trailing" id="Ejz-FB-gdv"/>
                             <constraint firstItem="PG1-Me-nt6" firstAttribute="centerX" secondItem="IPM-26-bAn" secondAttribute="centerX" id="Esz-HD-yKL"/>
+                            <constraint firstItem="ecg-SK-o4L" firstAttribute="top" secondItem="NXD-CO-gEz" secondAttribute="bottom" constant="30" id="HBu-5Y-fuq"/>
                             <constraint firstItem="CRW-Pv-Q35" firstAttribute="trailing" secondItem="ecg-SK-o4L" secondAttribute="trailing" constant="15" id="HOb-jS-zUc"/>
                             <constraint firstItem="dcw-ir-XbA" firstAttribute="leading" secondItem="CRW-Pv-Q35" secondAttribute="leading" constant="15" id="Ld5-oZ-xrA"/>
                             <constraint firstItem="NXD-CO-gEz" firstAttribute="top" secondItem="CRW-Pv-Q35" secondAttribute="top" id="Tds-JL-ooc"/>
                             <constraint firstItem="dcw-ir-XbA" firstAttribute="top" secondItem="PG1-Me-nt6" secondAttribute="bottom" constant="40" id="XQB-Sk-S2z"/>
                             <constraint firstItem="NXD-CO-gEz" firstAttribute="leading" secondItem="CRW-Pv-Q35" secondAttribute="leading" id="agY-B0-1np"/>
                             <constraint firstItem="CRW-Pv-Q35" firstAttribute="trailing" secondItem="PG1-Me-nt6" secondAttribute="trailing" constant="15" id="hgh-ev-ERF"/>
-                            <constraint firstItem="PG1-Me-nt6" firstAttribute="centerY" secondItem="IPM-26-bAn" secondAttribute="centerY" id="oyF-TI-IrT"/>
                             <constraint firstItem="ecg-SK-o4L" firstAttribute="leading" secondItem="CRW-Pv-Q35" secondAttribute="leading" constant="15" id="p0z-H5-2lq"/>
                             <constraint firstItem="CRW-Pv-Q35" firstAttribute="trailing" secondItem="dcw-ir-XbA" secondAttribute="trailing" constant="15" id="t6R-Bd-45f"/>
                         </constraints>
